@@ -326,7 +326,7 @@ else:
 
 
 
-# 14. Choose a number from the keyboard.Write a script to generate the following pyramid in the console:
+# 14. Choose a number from the keyboard. Write a script to generate the following pyramid in the console:
       '''
 1
 22
