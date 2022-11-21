@@ -340,7 +340,7 @@ assert  x[0].capitalize() == x[-1].capitalize(), 'the first and last character a
 
 
 
-# 16. Given the string: '0123456789'
+# 16. Given the string:  '0123456789'
       # show even numbers only
       # show only odd numbers
 
