@@ -36,7 +36,7 @@ list2 = [6, 5, 4]
 ls = list1 + list2
 print(ls)
 
-# extend() method
+# extend method
 
 list1 = [3, 1, 0, 2]
 list2 = [6, 5, 4]
