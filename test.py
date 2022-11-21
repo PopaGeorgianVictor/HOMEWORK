@@ -1,18 +1,20 @@
-weekdays = {'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}
-weekend = {'Saturday','Sunday'}
+from datetime import datetime
+import pytz
 
-weekend.add('Monday')
-print('Condition checked:', weekdays)
+def country_time_zones():
+    Country_Zones = ['America/New_York', 'Asia/Kolkata', 'Australia/Sydney',
+                'Canada/Atlantic', 'Brazil/East','Chile/EasterIsland', 'Cuba', 'Egypt',
+                'Europe/Amsterdam', 'Europe/Athens', 'Europe/Berlin', 'Europe/Istanbul',
+                'Europe/Jersey', 'Europe/London', 'Europe/Moscow', 'Europe/Paris',
+                'Europe/Rome', 'Hongkong', 'Iceland', 'Indian/Maldives', 'Iran',
+                'Israel', 'Japan', 'NZ', 'US/Alaska', 'US/Arizona', 'US/Central',
+                'US/East-Indiana' , 'Europe/Bucharest']
+    country_time_zones = []
+    for country_time_zone in Country_Zones:
+        country_time_zones.append(pytz.timezone(country_time_zone))
+    for i in range(len(country_time_zones)):
+        country_time = datetime.now(country_time_zones[i])
+        print(f"Date from {Country_Zones[i]} is {country_time.strftime('%d-%m-%y')} and the time is {country_time.strftime('%H:%M:%S')}")
 
-# issubset method
 
-subset = ['weekend is a subset of weekdays' if weekend.issubset(weekdays) else 'weekend is not a subset of weekdays']
-print(subset)
-
-# difference method - if we have equal sets then it will return the null set
-
-print(weekend.difference(weekdays))
-
-# intersection method
-
-print(weekend.intersection(weekdays))
+country_time_zones()

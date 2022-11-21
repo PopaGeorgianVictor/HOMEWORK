@@ -350,3 +350,8 @@ print(f"Even numbers are: {str[::2]}")
 print(f"Odd numbers is: {str[1::2]}")
 
 
+
+
+
+
+
