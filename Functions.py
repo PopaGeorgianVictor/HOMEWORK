@@ -22,7 +22,7 @@ def even_odd(num):
     return False
 
 num_check = int(input("Number is: "))
-print("Number is even?" , even_odd(num_check))
+print("Number is even? " , even_odd(num_check))
 
 
 
