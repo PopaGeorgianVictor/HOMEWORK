@@ -207,7 +207,6 @@ print(holder2.account_credit(100000000000000000000000000000))
 
 
 
-
 '''class Invoice(). Attributes: series, number, product_name, quantity, price_per_piece
      Constructor: all attributes, no series(will be constant, no builder needed, all invoices will
                   had the same series)

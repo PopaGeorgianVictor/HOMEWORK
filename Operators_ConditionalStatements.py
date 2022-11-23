@@ -1,5 +1,5 @@
 
-# Checks and displays whether x is a natural number or not
+'''Checks and displays whether x is a natural number or not'''
 
 # isnumeric method
 
@@ -25,7 +25,7 @@ else:
 
 
 
-# Checks and displays whether x is a positive, negative, or neutral number
+'''Checks and displays whether x is a positive, negative, or neutral number'''
 
 # using if-elif-else statement
 
@@ -52,7 +52,7 @@ print(x)
 
 
 
-# Checks and displays if x is between -2 and 13
+'''Checks and displays if x is between -2 and 13'''
 
 # check if the number is greater than -2 and less than 13
 
@@ -87,7 +87,7 @@ else:
 
 
 
-# Checks if x is NOT between 5 and 27
+''''Checks if x is NOT between 5 and 2'''
 
 # check if the number is not greater than 5 and not less than 27
 
@@ -124,7 +124,7 @@ else:
 
 
 
-#  x, y-int. Checks and displays if they are equal, if not displays which one is greater
+ '''x, y-int. Checks and displays if they are equal, if not displays which one is greater'''
 
 # if-else statement
 
@@ -161,7 +161,7 @@ else:
 
 
 
-#  x,y,z - the sides of a triangle. Check whether a Triangle is Equilateral, Isosceles or Scalene
+'''x,y,z - the sides of a triangle. Check whether a Triangle is Equilateral, Isosceles or Scalene'''
 
 # if-elif-else statement
 
@@ -185,11 +185,7 @@ else:
 
 
 
-
-
-
-
-#  Check and display if it is vowel or not
+'''Check and display if it is vowel or not'''
 
 
 # lower() method
@@ -220,8 +216,7 @@ print(w)
 
 
 
-
-# Checks if x has at least 4 digits
+'''Checks if x has at least 4 digits'''
 
 # len() function
 
@@ -248,11 +243,7 @@ print(n)
 
 
 
-
-
-
-
-# Checks if x has exactly 6 digits
+'''Checks if x has exactly 6 digits'''
 
 #  len() function
 
@@ -276,13 +267,7 @@ print(n)
 
 
 
-
-
-
-
-
-
-# Checks whether x is odd or even
+'''Checks whether x is odd or even'''
 
 # modulo operator
 
@@ -306,14 +291,7 @@ print(n)
 
 
 
-
-
-
-
-
-
-
-# x,y,z - int. Show which one is the biggest?
+'''x,y,z - int. Show which one is the biggest?'''
 
 
 # using just if !
@@ -357,15 +335,7 @@ else:
 
 
 
-
-
-
-
-
-
-
-
-# x,y,z -represent the angles of a triangle. Checks and displays whether the triangle is valid or not
+'''x,y,z -represent the angles of a triangle. Checks and displays whether the triangle is valid or not'''
 
 # if-else statement
 
@@ -395,12 +365,6 @@ print(a)
 
 
 
-
-
-
-
-
-
 ''' Given the string: 'Coral is either the stupidest animal or the smartest rock'
       # read an int x from the keyboard
       # display the string without the last x characters
@@ -413,13 +377,6 @@ print(coral_my_favorite_animal[:- x])
 
 new_coral_my_favorite_animal = coral_my_favorite_animal[:5] + coral_my_favorite_animal[-5:]
 print(new_coral_my_favorite_animal)
-
-
-
-
-
-
-
 
 
 
@@ -447,21 +404,12 @@ print(coral_my_favorite_animal[:word_index])
 
 
 
-
-
-
-#  Read a string from the keyboard.Checks if the first and last characters are the same
+'''Read a string from the keyboard.Checks if the first and last characters are the same'''
 
 # assert method
 
 x = input('Your favorite word is: ')
 assert  x[0].capitalize() == x[-1].capitalize(), 'the first and last character are different'
-
-
-
-
-
-
 
 
 

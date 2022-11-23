@@ -22,17 +22,7 @@ print(arpeggio)
 
 
 
-
-
-
-
-
-
-
-
-
-
-# Same musical notes list. How many times does 'do' appear?
+''' Same musical notes list. How many times does 'do' appear?'''
 
 # counting the 'do'
 
@@ -41,7 +31,13 @@ count_DO = musical_notes.count('DO')
 print(count_DO)
 
 
-# 3. Having 2 lists: [3, 1, 0, 2] and [6, 5, 4]. Join them in one list
+
+
+
+
+
+
+''' Having 2 lists: [3, 1, 0, 2] and [6, 5, 4]. Join them in one list'''
 
 # concatenation (+) operator
 
@@ -96,14 +92,7 @@ print ("Concatenated list:\n"+ str(res))
 
 
 
-
-
-
-
-
-
-
-'''# Having 2 lists: [3, 1, 0, 2] and [6, 5, 4]
+''' Having 2 lists: [3, 1, 0, 2] and [6, 5, 4]
      # concatenate the lists
      # sort the list (ascending and descending)
      # remove 0
@@ -121,13 +110,7 @@ ls.remove(0) , print('New list is', ls)
 
 
 
-
-
-
-
-
-
-# Having 2 lists: [3, 1, 0, 2] and [6, 5, 4]. Concatenate the lists and check if list is empty or not
+''' Having 2 lists: [3, 1, 0, 2] and [6, 5, 4]. Concatenate the lists and check if list is empty or not'''
 
 # if - not - else
 
@@ -154,14 +137,7 @@ else:
 
 
 
-
-
-
-
-
-
-
-# Having 2 lists: [3, 1, 0, 2] and [6, 5, 4].Concatenate the lists and delete list and check if list is empty
+''' Having 2 lists: [3, 1, 0, 2] and [6, 5, 4].Concatenate the lists and delete list and check if list is empty'''
 
 
 # clear method
@@ -173,14 +149,6 @@ ls = list1 + list2
 ls.clear()
 check = ['list is empty' if not ls else 'list is not empty']
 print(check)
-
-
-
-
-
-
-
-
 
 
 
@@ -209,15 +177,6 @@ print('Congrats Alex, you got ' , d['Alex'])
 d.pop('George')
 d['Isabela'] = 9
 print('New students and grade are' , d)
-
-
-
-
-
-
-
-
-
 
 
 

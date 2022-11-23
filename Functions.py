@@ -1,6 +1,6 @@
 
 
-# Function to calculate and return the sum of two numbers
+'''Function to calculate and return the sum of two numbers'''
 
 def add_numbers(n1,n2):
     sum = n1 + n2
@@ -15,12 +15,7 @@ print("Sum is: ",add_numbers(num1,num2))
 
 
 
-
-
-
-
-
-# Function to return TRUE if a number is even, FALSE for odd
+'''Function to return TRUE if a number is even, FALSE for odd'''
 
 def even_odd(num):
   if num % 2 == 0:
@@ -37,14 +32,7 @@ print("Number is even? " , even_odd(num_check))
 
 
 
-
-
-
-
-
-
-
-# Function that returns the area of the rectangle
+'''Function that returns the area of the rectangle'''
 
 def rectangle_area(L, l):
     a = L * l
@@ -62,15 +50,7 @@ print('The area is: ',rectangle_area(length , width))
 
 
 
-
-
-
-
-
-
-
-
-# Function that returns the area of the circle
+'''Function that returns the area of the circle'''
 
 import math
 
@@ -87,17 +67,7 @@ print('The area is: ' , circle_area(raza_cerc))
 
 
 
-
-
-
-
-
-
-
-
-
-
-# Function that returns True if a character is found in the given string and False if not
+'''Function that returns True if a character is found in the given string and False if not'''
 
 def caracter(string):
   if ch in string:
@@ -108,18 +78,6 @@ def caracter(string):
 ch = input('Character to  check is: ')
 verificare_caracter  = input("String is: ")
 print("The character is found in the string?" , caracter(verificare_caracter))
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -153,15 +111,7 @@ string(str)
 
 
 
-
-
-
-
-
-
-
-
-# Function that receives a LIST of numbers and returns a LIST of only positive numbers
+'''Function that receives a LIST of numbers and returns a LIST of only positive numbers'''
 
 
 def positive_numbers(list):
@@ -178,16 +128,6 @@ for i in range(1, total_numbers  + 1):
 
 print("The positive numbers in the list are: ")
 positive_numbers(list)
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -221,17 +161,7 @@ num(num1,num2)
 
 
 
-
-
-
-
-
-
-
-
-
-
-# Function that receives a month of the year and returns how many days that month has
+'''Function that receives a month of the year and returns how many days that month has'''
 
 
 
@@ -249,20 +179,7 @@ print('Number of days in the month is: ' , number_of_days_in_the_month(year, mon
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Calculator function who return 4 values: sum, difference, multiplication,dividing of two numbers
+'''Calculator function who return 4 values: sum, difference, multiplication,dividing of two numbers'''
 
 
 def sum(x, y):
@@ -301,19 +218,7 @@ else:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# Function that receives a list of digits (ie only 0-9).Returns a DICT that tells how many times each digit occurs
+'''Function that receives a list of digits (ie only 0-9).Returns a DICT that tells how many times each digit occurs'''
 
 def frequency(list):
     DICT = {}
@@ -335,17 +240,7 @@ frequency(list)
 
 
 
-
-
-
-
-
-
-
-
-
-
-# Function to receive a number and return the sum of all numbers from 0 to that number
+'''Function to receive a number and return the sum of all numbers from 0 to that number'''
 
 
 def sumOfDigitsFrom0ToN(n):
@@ -364,20 +259,7 @@ print("Sum of total numbers from 0 to", n, "is", sumOfDigitsFrom0ToN(n))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Function that receives 2 lists of numbers (numbers can be duplicated). Return common numbers
+'''Function that receives 2 lists of numbers (numbers can be duplicated). Return common numbers'''
 
 
 # method 1
@@ -436,22 +318,8 @@ print("Common numbers are: ", common_numbers(a, b))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Function to apply a price discount
-'''If the product costs 100 lei and we apply a 10% discount. 
+'''Function to apply a price discount
+If the product costs 100 lei and we apply a 10% discount. 
 The price will be 90. Handle cases where the discount is invalid. 
 For example, a discount of 110% is invalid.'''
 
@@ -482,16 +350,7 @@ while product != "X":
 
 
 
-
-
-
-
-
-
-
-
-
-# Function to display the current date and time in different countries
+'''Function to display the current date and time in different countries'''
 
 
 from datetime import datetime

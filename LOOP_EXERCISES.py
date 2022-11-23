@@ -162,13 +162,6 @@ for food in available_foods:
 
 
 
-
-
-
-
-
-
-
 '''
 Problem 8
 Given the list 'collection' print every single word in the list. The list contains another list that contains words. Print all

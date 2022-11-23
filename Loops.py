@@ -47,13 +47,6 @@ while True:
 
 
 
-
-
-
-
-
-
-
 '''Given the list: cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
      # use a for else inside a for
      # changes the items in the list so that they are written in uppercase,except the first and the last
@@ -66,11 +59,6 @@ for cars_upper in range(1, len(cars)-1):
    cars[cars_upper] = cars[cars_upper].upper()
 else:
    print('cars_upper:', cars)
-
-
-
-
-
 
 
 
@@ -101,7 +89,6 @@ for car in cars:
 
 
 
-
 ''' Given the list: cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
        # a wealthy but indecisive buyer comes along. We will show him all the cars except Trabant and Lăstun
        # if the car is Trabant or Lăstun skip it (don't use else)
@@ -116,13 +103,6 @@ for car in cars:
     if car in rich_buyer_avoid:
         continue
     print(f'You might like the {car} car')
-
-
-
-
-
-
-
 
 
 
@@ -150,11 +130,6 @@ for i in range(len(cars)):
         cars[i] = 'Tesla'
 print(f'Vintage cars are: {old_cars}')
 print(f'New models: {cars}')
-
-
-
-
-
 
 
 
@@ -201,16 +176,7 @@ for car, car_price in car_price.items():
 
 
 
-
-
-
-
-
-
-
-
-
-# Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]. Without using count show how many times 3 occurs
+'''Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]. Without using count show how many times 3 occurs'''
 
 
 nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
@@ -224,7 +190,8 @@ print(f'The number {count_number} appears {len(x)} times')
 
 
 
-# Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]. Without using sum ,calculates and displays the sum of numbers
+
+'''Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]. Without using sum ,calculates and displays the sum of numbers'''
 
 nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
 
@@ -240,14 +207,7 @@ print('The sum of the numbers is:', sum)
 
 
 
-
-
-
-
-
-
-
-# Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3].  Without using max, display the highest number
+'''Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3].  Without using max, display the highest number'''
 
 
 nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
@@ -257,11 +217,6 @@ for nr in nums:
     if nr > max_nr:
         max_nr = nr
 print(f'The maximum number is: {max_nr}')
-
-
-
-
-
 
 
 
@@ -281,10 +236,6 @@ for n in nums:
     if n >= 0:
         number_conversion = -n
         print(number_conversion)
-
-
-
-
 
 
 
@@ -334,12 +285,7 @@ print('Negative numbers is:' , negative_number)
 
 
 
-
-
-
-
-
-# Given the list: nums = [-5, 7, 2, 9, 12, 3, 1, -6, -4, 3].Without using sort, sort the list in ascending order
+'''Given the list: nums = [-5, 7, 2, 9, 12, 3, 1, -6, -4, 3].Without using sort, sort the list in ascending order'''
 
 
 # nested for method
@@ -370,13 +316,6 @@ while nums:
     sorted_list.remove(min)
 
 print('Sorted list is: ' , sorted_list)
-
-
-
-
-
-
-
 
 
 
@@ -418,12 +357,6 @@ else:
 
 
 
-
-
-
-
-
-
  '''Choose a number from the keyboard. Write a script to generate the following pyramid in the console:
       
 1
@@ -457,17 +390,6 @@ for i in range(1, number_of_rows + 1):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ''' phone_keyboard = [
  [1, 2, 3],
  [4, 5, 6],
@@ -481,14 +403,6 @@ phone_keyboard = [[1,2,3], [4,5,6], [7,8,9], [0]]
 for key in phone_keyboard:
    for phone in key:
        print('The current figure is :', phone)
-
-
-
-
-
-
-
-
 
 
 
