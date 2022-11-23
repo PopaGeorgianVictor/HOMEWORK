@@ -1,10 +1,10 @@
 
 
-# 1. Given the list: cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
-     # Use a for to iterate through the entire list and display:
+'''  Given the list: cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
+     Use a for to iterate through the entire list and display:
        # my favorite car is x
        # do the same thing with using for each
-       # do the same thing with using while
+       # do the same thing with using while'''
 
 
 # using for
@@ -46,10 +46,19 @@ while True:
 
 
 
-# 2. Given the list: cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
+
+
+
+
+
+
+
+
+'''Given the list: cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
      # use a for else inside a for
      # changes the items in the list so that they are written in uppercase,except the first and the last
      # in else print list
+'''
 
 cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
 
@@ -63,9 +72,15 @@ else:
 
 
 
-# 3. Given the list: cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
+
+
+
+
+
+
+''' Given the list: cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
      # a buyer comes in who wants to buy a Mercedes
-     # if the car is a Mercedes: print 'I found the car you wanted' else print 'I found the X car. I'm still looking'
+     # if the car is a Mercedes: print 'I found the car you wanted' else print 'I found the X car. I'm still looking''''
 
 
 cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
@@ -85,10 +100,12 @@ for car in cars:
 
 
 
-# 4. Given the list: cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
-     # a wealthy but indecisive buyer comes along. We will show him all the cars except Trabant and Lăstun
+
+
+''' Given the list: cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
+       # a wealthy but indecisive buyer comes along. We will show him all the cars except Trabant and Lăstun
        # if the car is Trabant or Lăstun skip it (don't use else)
-       # print 'You might like the X car'
+       # print 'You might like the X car''''
 
 
 
@@ -105,7 +122,15 @@ for car in cars:
 
 
 
-# 5. cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
+
+
+
+
+
+
+
+
+''' cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
      # Modernize the auto park:
        # create an empty list, old_cars
        # iterate through cars
@@ -113,7 +138,7 @@ for car in cars:
          # save this cars in old_cars
          # overwrite them with Tesla (in the initial cars list)
        # print 'Vintage cars are:'
-       # print 'New models:'
+       # print 'New models:''''
 
 cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
 
@@ -131,20 +156,26 @@ print(f'New models: {cars}')
 
 
 
-# 6. Given the dict:
-# car_price = {
-# 'Dacia': 6800,
-# 'Lăstun': 500,
-# 'Opel': 1100,
-# 'Audi': 19000,
-# 'BMW': 23000
-# }
 
 
-   # A client comes with a budget of 15,000 $
+
+
+
+
+
+''' Given the dict:
+car_price = {
+'Dacia': 6800,
+'Lăstun': 500,
+'Opel': 1100,
+'Audi': 19000,
+'BMW': 23000 }
+
+
+    A client comes with a budget of 15,000 $
      # shows only cars that fit this budget
      # iterate through dict.items() and access the car and price
-     # print  'Your budget fits to buy:' else 'For a budget below 15,000 $ you can choose this car: '
+     # print  'Your budget fits to buy:' else 'For a budget below 15,000 $ you can choose this car: '''
 
 
 car_price = {
@@ -169,7 +200,17 @@ for car, car_price in car_price.items():
 
 
 
-# 7. Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]. Without using count show how many times 3 occurs
+
+
+
+
+
+
+
+
+
+
+# Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]. Without using count show how many times 3 occurs
 
 
 nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
@@ -183,7 +224,7 @@ print(f'The number {count_number} appears {len(x)} times')
 
 
 
-# 8. Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]. Without using sum ,calculates and displays the sum of numbers
+# Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]. Without using sum ,calculates and displays the sum of numbers
 
 nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
 
@@ -198,7 +239,15 @@ print('The sum of the numbers is:', sum)
 
 
 
-# 9. Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3].  Without using max, display the highest number
+
+
+
+
+
+
+
+
+# Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3].  Without using max, display the highest number
 
 
 nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
@@ -213,9 +262,18 @@ print(f'The maximum number is: {max_nr}')
 
 
 
-# 10. Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3].
-      # if the number is positive, replace it with its negative value
-      # print new list
+
+
+
+
+
+
+
+
+
+''' Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3].
+    # if the number is positive, replace it with its negative value
+    # print new list'''
 
 nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
 
@@ -229,7 +287,14 @@ for n in nums:
 
 
 
-# 11. Given the lists:
+
+
+
+
+
+
+
+'''Given the lists:
       # numbers = [-5, 7, 2, 9, 12, 3, 1, -6, -4, 3]
       # even_number = []
       # odd_number = []
@@ -237,7 +302,7 @@ for n in nums:
       # negative_number = []
 
         # populates the other lists correctly
-        # print all four list
+        # print all four list'''
 
 
 
@@ -264,7 +329,17 @@ print('Positive numbers is:' , positive_number)
 print('Negative numbers is:' , negative_number)
 
 
-# 12. Given the list: nums = [-5, 7, 2, 9, 12, 3, 1, -6, -4, 3].Without using sort, sort the list in ascending order
+
+
+
+
+
+
+
+
+
+
+# Given the list: nums = [-5, 7, 2, 9, 12, 3, 1, -6, -4, 3].Without using sort, sort the list in ascending order
 
 
 # nested for method
@@ -298,11 +373,24 @@ print('Sorted list is: ' , sorted_list)
 
 
 
-# 13. Number riddles:
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+ Number riddles:
       # secret_number = generate a random number between 1 and 30
       # guess_number = None
       # using while pick a number
-      # python replies: Secret number it's bigger/Secret number it's smaller/Congratulations! You guessed it!
+      # python replies: Secret number it's bigger/Secret number it's smaller/Congratulations! You guessed it!'''
 
 
 
@@ -326,15 +414,25 @@ else:
 
 
 
-# 14. Choose a number from the keyboard. Write a script to generate the following pyramid in the console:
-      '''
+
+
+
+
+
+
+
+
+
+
+ '''Choose a number from the keyboard. Write a script to generate the following pyramid in the console:
+      
 1
 22
 333
 4444
 55555
 666666
-7777777'''
+7777777 '''
 
 # method 1
 
@@ -355,12 +453,27 @@ for i in range(1, number_of_rows + 1):
 
 
 
-# 15. phone_keyboard = [
-# [1, 2, 3],
-# [4, 5, 6],
-# [7, 8, 9],
-# [0]
-# ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+''' phone_keyboard = [
+ [1, 2, 3],
+ [4, 5, 6],
+ [7, 8, 9],
+ [0]
+'''
 
    # print 'The current figure is'
 
@@ -377,7 +490,13 @@ for key in phone_keyboard:
 
 
 
-# 17. We imagine a football team
+
+
+
+
+
+
+''' We imagine a football team
       # declare a list of 5 players
       # swaps_max = 3
       # swaps_done = you play with different values
@@ -391,7 +510,7 @@ for key in phone_keyboard:
       # if the player is not on the field
         # print 'Can't make the change because player x is not in the field'
         # displays 'You still have z changes'
-
+'''
 
 
 players = ['Ronaldo', 'Messi', 'Ronaldinho', 'Zidane', 'Maradona']

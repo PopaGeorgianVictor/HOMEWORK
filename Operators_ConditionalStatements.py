@@ -1,5 +1,5 @@
 
-# 1.Checks and displays whether x is a natural number or not
+# Checks and displays whether x is a natural number or not
 
 # isnumeric method
 
@@ -21,7 +21,11 @@ else:
 
 
 
-# 2.Checks and displays whether x is a positive, negative, or neutral number
+
+
+
+
+# Checks and displays whether x is a positive, negative, or neutral number
 
 # using if-elif-else statement
 
@@ -43,7 +47,12 @@ print(x)
 
 
 
-# 3.Checks and displays if x is between -2 and 13
+
+
+
+
+
+# Checks and displays if x is between -2 and 13
 
 # check if the number is greater than -2 and less than 13
 
@@ -73,7 +82,12 @@ else:
 
 
 
-# 4. Checks if x is NOT between 5 and 27
+
+
+
+
+
+# Checks if x is NOT between 5 and 27
 
 # check if the number is not greater than 5 and not less than 27
 
@@ -105,7 +119,12 @@ else:
 
 
 
-# 5. x, y-int. Checks and displays if they are equal, if not displays which one is greater
+
+
+
+
+
+#  x, y-int. Checks and displays if they are equal, if not displays which one is greater
 
 # if-else statement
 
@@ -136,7 +155,13 @@ else:
 
 
 
-# 6. x,y,z - the sides of a triangle. Check whether a Triangle is Equilateral, Isosceles or Scalene
+
+
+
+
+
+
+#  x,y,z - the sides of a triangle. Check whether a Triangle is Equilateral, Isosceles or Scalene
 
 # if-elif-else statement
 
@@ -154,7 +179,17 @@ else:
 
 
 
-# 7. Check and display if it is vowel or not
+
+
+
+
+
+
+
+
+
+
+#  Check and display if it is vowel or not
 
 
 # lower() method
@@ -177,7 +212,16 @@ w = [ 'The letter is a vowel' if letter[0].lower() in vowel else 'The letter is 
 print(w)
 
 
-# 8. Checks if x has at least 4 digits
+
+
+
+
+
+
+
+
+
+# Checks if x has at least 4 digits
 
 # len() function
 
@@ -197,7 +241,18 @@ print(n)
 
 
 
-# 9. Checks if x has exactly 6 digits
+
+
+
+
+
+
+
+
+
+
+
+# Checks if x has exactly 6 digits
 
 #  len() function
 
@@ -216,7 +271,18 @@ n = [f"The number {x} has exactly 6 digits"  if len(str(x)) == 6 else f"The numb
 print(n)
 
 
-# 10. Checks whether x is odd or even
+
+
+
+
+
+
+
+
+
+
+
+# Checks whether x is odd or even
 
 # modulo operator
 
@@ -236,7 +302,18 @@ print(n)
 
 
 
-# 11. x,y,z - int. Show which one is the biggest?
+
+
+
+
+
+
+
+
+
+
+
+# x,y,z - int. Show which one is the biggest?
 
 
 # using just if !
@@ -277,7 +354,18 @@ else:
 
 
 
-# 12. x,y,z -represent the angles of a triangle. Checks and displays whether the triangle is valid or not
+
+
+
+
+
+
+
+
+
+
+
+# x,y,z -represent the angles of a triangle. Checks and displays whether the triangle is valid or not
 
 # if-else statement
 
@@ -303,10 +391,20 @@ print(a)
 
 
 
-# 13. Given the string: 'Coral is either the stupidest animal or the smartest rock'
+
+
+
+
+
+
+
+
+
+
+''' Given the string: 'Coral is either the stupidest animal or the smartest rock'
       # read an int x from the keyboard
       # display the string without the last x characters
-      # declare a new string consisting of the first 5 characters + last 5
+      # declare a new string consisting of the first 5 characters + last 5'''
 
 
 coral_my_favorite_animal = 'Coral is either the stupidest animal or the smartest rock'
@@ -319,10 +417,22 @@ print(new_coral_my_favorite_animal)
 
 
 
-# 14. Given the string: 'Coral is either the stupidest animal or the smartest rock'
+
+
+
+
+
+
+
+
+
+
+
+
+'''  Given the string: 'Coral is either the stupidest animal or the smartest rock'
       # save to a variable and display the start index of the word rock
       # using this variable + slicing, display the entire string up to this one word
-
+'''
 
 coral_my_favorite_animal = 'Coral is either the stupidest animal or the smartest rock'
 word = 'rock'
@@ -331,7 +441,16 @@ print(coral_my_favorite_animal[:word_index])
 
 
 
-# 15. Read a string from the keyboard.Checks if the first and last characters are the same
+
+
+
+
+
+
+
+
+
+#  Read a string from the keyboard.Checks if the first and last characters are the same
 
 # assert method
 
@@ -340,10 +459,25 @@ assert  x[0].capitalize() == x[-1].capitalize(), 'the first and last character a
 
 
 
-# 16. Given the string:  '0123456789'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+  Given the string:  '0123456789'
       # show even numbers only
       # show only odd numbers
-
+'''
 
 str = '0123456789'
 print(f"Even numbers are: {str[::2]}")

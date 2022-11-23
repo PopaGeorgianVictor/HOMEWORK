@@ -1,10 +1,10 @@
 
-# 1. Declare a list of musical notes
+'''Declare a list of musical notes
      # display it
      # reverse the order using slicing and overwrite the list
      # print the current version (inverted)
      # on this list apply a method that you suspect does the same thing,that is, to reverse its order. You don't need to overwrite it in this case because the method does this automatically
-     # print the current version of the list. You are basically back to the variant initial
+     # print the current version of the list. You are basically back to the variant initial'''
 
 
 # slicing , reverse and overwrite
@@ -18,7 +18,21 @@ print(arpeggio)
 
 
 
-# 2. Same musical notes list. How many times does 'do' appear?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Same musical notes list. How many times does 'do' appear?
 
 # counting the 'do'
 
@@ -78,12 +92,23 @@ print ("Concatenated list:\n"+ str(res))
 
 
 
-# 4. Having 2 lists: [3, 1, 0, 2] and [6, 5, 4]
+
+
+
+
+
+
+
+
+
+
+
+'''# Having 2 lists: [3, 1, 0, 2] and [6, 5, 4]
      # concatenate the lists
      # sort the list (ascending and descending)
      # remove 0
      # print new list
-
+'''
 
 ls = list1 + list2
 ls.sort() , print('Ascending sorted list is', ls)
@@ -93,7 +118,16 @@ ls.remove(0) , print('New list is', ls)
 
 
 
-# 5.Having 2 lists: [3, 1, 0, 2] and [6, 5, 4]. Concatenate the lists and check if list is empty or not
+
+
+
+
+
+
+
+
+
+# Having 2 lists: [3, 1, 0, 2] and [6, 5, 4]. Concatenate the lists and check if list is empty or not
 
 # if - not - else
 
@@ -118,7 +152,16 @@ else:
 
 
 
-# 6. Having 2 lists: [3, 1, 0, 2] and [6, 5, 4].Concatenate the lists and delete list and check if list is empty
+
+
+
+
+
+
+
+
+
+# Having 2 lists: [3, 1, 0, 2] and [6, 5, 4].Concatenate the lists and delete list and check if list is empty
 
 
 # clear method
@@ -133,11 +176,23 @@ print(check)
 
 
 
-# 7. Having the dictionary {'Ana' : 8, 'George' : 10, 'Alex' : 5}
+
+
+
+
+
+
+
+
+
+
+
+
+''' Having the dictionary {'Ana' : 8, 'George' : 10, 'Alex' : 5}
      # display only names
      # names are students and digits are grades.Print students and a grade for each one
      # Alex appealed and got 6.Change Alex's grade to 6 and print it
-     # George transfers from the class.In place of George comes Isabela with grade 9.Print new dictionary
+     # George transfers from the class.In place of George comes Isabela with grade 9.Print new dictionary'''
 
 # keys and pop method
 
@@ -159,11 +214,24 @@ print('New students and grade are' , d)
 
 
 
-# 8. Having the sets: weekdays = {'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'} and weekend = {'Saturday','Sunday'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''# Having the sets: weekdays = {'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'} and weekend = {'Saturday','Sunday'}
      # check condition: sets cannot contain duplicates. Duplicates are discarded when initializing a set
      # check if weekend is a subset of weekdays or not
      # show the differences between sets
-     # show the intersection of elements between sets
+     # show the intersection of elements between sets'''
 
 weekdays = {'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}
 weekend = {'Saturday','Sunday'}
