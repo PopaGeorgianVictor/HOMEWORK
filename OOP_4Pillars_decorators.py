@@ -110,7 +110,7 @@ class Circle(GeometricShape):
         return self.PI * (self._radius ** 2)
 
     def describe(self):
-        print('The most I probably have corners')
+        print("The most I probably don't have corners")
 
 
 
