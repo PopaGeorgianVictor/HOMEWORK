@@ -34,6 +34,8 @@
 
 '''
 
+from abc import ABC, abstractmethod
+
 class GeometricShape(ABC):
 	PI = 3.14
 
@@ -59,9 +61,8 @@ class Square(GeometricShape):
 
 
 	def delete_side(self):
-        print('dDEawe')
-
 		del self._side
+		print('Deleting..')
 		print('The side of the square has been ERASED !!!')
 
 	def area(self):
@@ -82,8 +83,8 @@ class Circle(GeometricShape):
 
 	# deleter
 	def delete_radius(self):
-        print('awd')
 		del self._radius
+		print('Deleting..')
 		print('The radius of the circle has been ERASED !!!')
 
 	def area(self):
@@ -91,3 +92,20 @@ class Circle(GeometricShape):
 
 	def describe(self):
 		print("The most I probably don't have corners")
+
+
+s = int(input('The square has sides of: '))
+r = int(input('The circle has a radius of: '))
+
+box = Square(s)
+donut = Circle(r)
+
+print(f"The side of the Square is: {box.get_side()}")
+print(f"The area of the square is: {box.area()}")
+print(f"The radius of the circle is: {donut.get_radius()}")
+print(f"The area of the circle is: {donut.area()}")
+
+print('-' * 100)
+
+box.delete_side()
+donut.delete_radius()
