@@ -37,6 +37,7 @@ from selenium.webdriver.common.by import By
 
 url = 'https://www.techlistic.com/p/selenium-practice-form.html'
 url1 = 'https://formy-project.herokuapp.com/form'
+url2 = 'https://formy-project.herokuapp.com/autocomplete'
 
 
 
@@ -44,85 +45,95 @@ driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
 driver.maximize_window()
 
 
-# # find element By.ID
+# find element By.ID
 
-# driver.get(url)
-# # this is for accepting Cookies
-# driver.find_element(By.ID, 'ez-accept-all').click()
+driver.get(url)
+# this is for accepting Cookies
+driver.find_element(By.ID, 'ez-accept-all').click()
 
-# driver.find_element(By.ID, 'sex-0').click()
-# driver.find_element(By.ID, 'exp-0').click()
-# driver.find_element(By.ID, 'datepicker').send_keys('29.11.2022')
-# driver.quit()
-#
-#
-#
-# # find element By.NAME
+driver.find_element(By.ID, 'sex-0').click()
+driver.find_element(By.ID, 'exp-0').click()
+driver.find_element(By.ID, 'datepicker').send_keys('29.11.2022')
+driver.quit()
 
-# driver.get(url)
-# # this is for accepting Cookies
-# driver.find_element(By.ID, 'ez-accept-all').click()
 
-# driver.find_element(By.NAME, 'firstname').send_keys('Popa')
-# driver.find_element(By.NAME, 'lastname').send_keys('Georgian')
-# driver.find_element(By.NAME, 'profession').click()
-# driver.quit()
-#
-# # find element By.LINK_TEXT
 
-# driver.get(url)
-# # this is for accepting Cookies
-# driver.find_element(By.ID, 'ez-accept-all').click()
+# find element By.NAME
 
-# driver.find_element(By.LINK_TEXT, 'Top 7 Web Development Trends').click()
-# driver.find_element(By.LINK_TEXT, 'How I learned Selenium in 4 weeks').click()
-# driver.find_element(By.LINK_TEXT, 'A Complete Guide to API Development').click()
-# driver.quit()
-#
-# # find element By.PARTIAL_LINK_TEXT
+driver.get(url)
+# this is for accepting Cookies
+driver.find_element(By.ID, 'ez-accept-all').click()
 
-# driver.get(url)
-# # this is for accepting Cookies
-# driver.find_element(By.ID, 'ez-accept-all').click()
+driver.find_element(By.NAME, 'firstname').send_keys('Popa')
+driver.find_element(By.NAME, 'lastname').send_keys('Georgian')
+driver.find_element(By.NAME, 'profession').click()
+driver.quit()
 
-# driver.find_element(By.PARTIAL_LINK_TEXT ,'Development').click()
-# driver.find_element(By.PARTIAL_LINK_TEXT ,'Selenium').click()
-# driver.find_element(By.PARTIAL_LINK_TEXT ,'API').click()
-# driver.quit()
-#
-# # find element By.TAG_NAME
+# find element By.LINK_TEXT
 
-# driver.get(url)
-# # this is for accepting Cookies
-# driver.find_element(By.ID, 'ez-accept-all').click()
+driver.get(url)
+# this is for accepting Cookies
+driver.find_element(By.ID, 'ez-accept-all').click()
 
-# tags_list = driver.find_elements(By.TAG_NAME,'input')
-#
-# tags_list[0].send_keys('Popa')
-# tags_list[1].send_keys('Georgian')
-# tags_list[2].click()
-# driver.quit()
-#
-# # find element By.CLASS_NAME
-#
-# driver.get(url1)
-#
-# class_list = driver.find_elements(By.CLASS_NAME,'form-control')
-#
-# class_list[0].send_keys('Popa')
-# class_list[1].send_keys('Georgian')
-# class_list[2].send_keys('QA')
-# class_list[3].click()
+driver.find_element(By.LINK_TEXT, 'Top 7 Web Development Trends').click()
+driver.find_element(By.LINK_TEXT, 'How I learned Selenium in 4 weeks').click()
+driver.find_element(By.LINK_TEXT, 'A Complete Guide to API Development').click()
+driver.quit()
+
+# find element By.PARTIAL_LINK_TEXT
+
+driver.get(url)
+# this is for accepting Cookies
+driver.find_element(By.ID, 'ez-accept-all').click()
+
+driver.find_element(By.PARTIAL_LINK_TEXT ,'Development').click()
+driver.find_element(By.PARTIAL_LINK_TEXT ,'Selenium').click()
+driver.find_element(By.PARTIAL_LINK_TEXT ,'API').click()
+driver.quit()
+
+# find element By.TAG_NAME
+
+driver.get(url)
+# this is for accepting Cookies
+driver.find_element(By.ID, 'ez-accept-all').click()
+
+tags_list = driver.find_elements(By.TAG_NAME,'input')
+
+tags_list[0].send_keys('Popa')
+tags_list[1].send_keys('Georgian')
+tags_list[2].click()
+driver.quit()
 
 # find element By.CLASS_NAME
 
-# driver.get(url1)
-#
-# driver.find_element(By.CSS_SELECTOR,'#first-name').send_keys('Popa') # by ID
-# driver.find_element(By.CSS_SELECTOR,'.form-control').send_keys('Popa') # by class
-# driver.find_element(By.CSS_SELECTOR,'[placeholder="Enter your job title"]').send_keys('QA') # by attribute=value
-# driver.find_element(By.CSS_SELECTOR,'*[placeholder*="first name"]').send_keys('Popa') # by attribute=partial_value
+driver.get(url1)
+
+class_list = driver.find_elements(By.CLASS_NAME,'form-control')
+
+class_list[0].send_keys('Popa')
+class_list[1].send_keys('Georgian')
+class_list[2].send_keys('QA')
+class_list[3].click()
+
+# find element By.CLASS_NAME
+
+driver.get(url1)
+
+driver.find_element(By.CSS_SELECTOR,'#first-name').send_keys('Popa') # by ID
+driver.find_element(By.CSS_SELECTOR,'.form-control').send_keys('Popa') # by class
+driver.find_element(By.CSS_SELECTOR,'[placeholder="Enter your job title"]').send_keys('QA') # by attribute=value
+driver.find_element(By.CSS_SELECTOR,'*[placeholder*="first name"]').send_keys('Popa') # by attribute=partial_value
 
 
 # find element By.XPATH
+
+driver.get(url1)
+
+#by attribute=value
+
+driver.find_element(By.XPATH, '//input[@id="first-name"]').send_keys('Popa')
+driver.find_element(By.XPATH, '//input[@id="last-name"]').send_keys('Georgian')
+driver.find_element(By.XPATH, '//input[@id="job-title"]').send_keys('QA')
+
+
 
