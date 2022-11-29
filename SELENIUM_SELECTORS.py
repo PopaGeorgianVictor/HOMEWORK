@@ -37,7 +37,7 @@ from selenium.webdriver.common.by import By
 
 url = 'https://www.techlistic.com/p/selenium-practice-form.html'
 url1 = 'https://formy-project.herokuapp.com/form'
-url2 = 'https://formy-project.herokuapp.com/autocomplete'
+
 
 
 
@@ -126,7 +126,7 @@ driver.find_element(By.CSS_SELECTOR,'[placeholder="Enter your job title"]').send
 driver.find_element(By.CSS_SELECTOR,'*[placeholder*="first name"]').send_keys('Popa') # by attribute=partial_value
 
 
-# find element By.XPATH
+'''Find element By.XPATH'''
 
 driver.get(url1)
 
@@ -136,5 +136,27 @@ driver.find_element(By.XPATH, '//input[@id="first-name"]').send_keys('Popa')
 driver.find_element(By.XPATH, '//input[@id="last-name"]').send_keys('Georgian')
 driver.find_element(By.XPATH, '//input[@id="job-title"]').send_keys('QA')
 
+# * all elements that comply with the rule
 
+driver.find_element(By.XPATH, '//*[@id="first-name"]').send_keys('Popa')
+
+
+# select elements from the list
+
+driver.find_element(By.XPATH, '(//input[@class="form-control"])[1]').send_keys('Popa')
+
+
+# with OR, using pipe |
+
+driver.find_element(By.XPATH, '//input[@id="first-name"] | //input[@id="last-name"]').send_keys('Popa')
+
+
+# partial text link
+
+text = driver.find_element(By.XPATH, '//a[contains(text(), "Submit")]').text
+print(text)
+
+# text link
+
+driver.find_element(By.XPATH, '//a[text()="Submit"]').click()
 
