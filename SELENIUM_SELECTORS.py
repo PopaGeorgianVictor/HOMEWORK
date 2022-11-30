@@ -141,7 +141,7 @@ driver.find_element(By.XPATH, '//input[@id="job-title"]').send_keys('QA')
 driver.find_element(By.XPATH, '//*[@id="first-name"]').send_keys('Popa')
 
 
-# select elements from the list
+select elements from the list
 
 driver.find_element(By.XPATH, '(//input[@class="form-control"])[1]').send_keys('Popa')
 
@@ -160,3 +160,16 @@ print(text)
 
 driver.find_element(By.XPATH, '//a[text()="Submit"]').click()
 
+
+#  with list of xpath and in python it ends up 1 element, so with (xpath)[1]
+
+list = driver.find_elements(By.XPATH,"//input[@class='form-control']")
+list[1].send_keys("Geo")
+print(len(list))
+
+
+# use parent::
+
+driver.find_element(By.XPATH,"//div[@class='form-group']/parent::form/div/div[4]/div[2]/input").click()
+driver.find_element(By.XPATH,"//div[@class='form-group']/parent::form/div/div[4]/div[3]/input").click()
+driver.find_element(By.XPATH,"//div[@class='form-group']/parent::form/div/div[4]/div[4]/input").click()
