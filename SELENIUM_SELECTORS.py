@@ -177,7 +177,7 @@ driver.find_element(By.XPATH,"//div[@class='form-group']/parent::form/div/div[4]
 
 
 # use the brother
-driver.get(url1)
+
 driver.find_element(By.XPATH,
  "//div/form//div[@class='form-group']//strong/following-sibling::input[@placeholder='Enter your job title']").send_keys('QA')
 
