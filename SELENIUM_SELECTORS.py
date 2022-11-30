@@ -45,6 +45,7 @@ driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
 driver.maximize_window()
 
 
+
 # find element By.ID
 
 driver.get(url)
@@ -173,3 +174,18 @@ print(len(list))
 driver.find_element(By.XPATH,"//div[@class='form-group']/parent::form/div/div[4]/div[2]/input").click()
 driver.find_element(By.XPATH,"//div[@class='form-group']/parent::form/div/div[4]/div[3]/input").click()
 driver.find_element(By.XPATH,"//div[@class='form-group']/parent::form/div/div[4]/div[4]/input").click()
+
+
+# use the brother
+driver.get(url1)
+driver.find_element(By.XPATH,
+ "//div/form//div[@class='form-group']//strong/following-sibling::input[@placeholder='Enter your job title']").send_keys('QA')
+
+
+# using function
+
+def input_by_label(label, input):
+    my_input = driver.find_element(By.XPATH, f'//label[text()="{label}"]/parent::strong/parent::div//input')
+    my_input.send_keys(input)
+
+input_by_label('Job title', 'QA')
