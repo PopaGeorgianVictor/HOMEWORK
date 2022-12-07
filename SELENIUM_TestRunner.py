@@ -11,3 +11,5 @@ freestyle to start thinking of some test scenarios yourself).
 import HtmlTestRunner
 import unittest
 
+from SELENIUM_ALERTS import Alerts
+from SELENIUM_CONTEXT_MENU import Context_menu
