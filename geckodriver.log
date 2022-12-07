@@ -2352,3 +2352,30 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
 1670424718241	Marionette	INFO	Stopped listening on port 40557
 [Parent 7640, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670424902710	geckodriver	INFO	Listening on 127.0.0.1:40608
+1670424905738	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "40609" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofile0R9TWX"
+1670424906146	Marionette	INFO	Marionette enabled
+1670424906152	Marionette	INFO	Listening on port 40618
+Read port: 40618
+WebDriver BiDi listening on ws://127.0.0.1:40609
+1670424906250	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofile0R9TWX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:40609/devtools/browser/fbb83608-ce14-44de-bf21-e32b9a907e4a
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
+1670424913168	Marionette	INFO	Stopped listening on port 40618
+!!! error running onStopped callback: TypeError: callback is not a function
+1670424984496	geckodriver	INFO	Listening on 127.0.0.1:40654
+1670424987522	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "40655" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileKh302w"
+1670424988104	Marionette	INFO	Marionette enabled
+1670424988109	Marionette	INFO	Listening on port 40664
+WebDriver BiDi listening on ws://127.0.0.1:40655
+Read port: 40664
+1670424988959	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileKh302w\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:40655/devtools/browser/be367242-006a-4a99-96c0-4f1d6eee49b3
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
+1670424994400	Marionette	INFO	Stopped listening on port 40664

@@ -180,6 +180,15 @@ class Login(unittest.TestCase):
         self.assertTrue(expected_msg in actual_msg, 'Page title is incorrect')
 
 
+    # TEST 11
+    def test_login_logout(self):
+        self.driver.find_element(By.ID, 'username').send_keys('tomsmith')
+        self.driver.find_element(By.ID, 'password').send_keys('SuperSecretPassword!')
+        self.driver.find_element(*self.LOGIN_BTN).click()
+        self.driver.find_element(By.XPATH, '//*[@id="content"]/div/a/i').click()
+        actual_url = self.driver.current_url
+        expected_url = 'https://the-internet.herokuapp.com/login'
+        self.assertEqual(expected_url, actual_url, 'URL is incorrect')
 
 
 
