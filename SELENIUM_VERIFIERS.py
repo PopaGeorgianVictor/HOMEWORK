@@ -82,6 +82,9 @@ from selenium.webdriver.common.by import By
 
 
 class Login(unittest.TestCase):
+    LOGIN_BTN = (By.XPATH, '//*[@id="login"]/button/i')
+    USERNAME = (By.XPATH, '//input[@id="username"]')
+    PASSWORD = (By.XPATH, '//input[@id="password"]')
 
     def setUp(self) -> None:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
@@ -97,7 +100,8 @@ class Login(unittest.TestCase):
     def test_url(self):
         actual = self.driver.current_url
         expected = 'https://the-internet.herokuapp.com/login'
-        self.assertEqual(actual, expected, 'URL is incorect') # assertEqual() to check equality of first & second value
+        # assertEqual() to check equality of first & second value
+        self.assertEqual(actual, expected, 'URL is incorect')
 
     # TEST 2
     def test_page_title(self):
@@ -107,6 +111,30 @@ class Login(unittest.TestCase):
         self.assertEqual(expected, actual, 'Page title is incorrect')
 
     # TEST 3
+    def test_h2_text(self):
+        actual = self.driver.find_element(By.XPATH, '//h2').text
+        print('Text of the //h2 element is: ', actual)
+        expected = 'Login Page'
+        self.assertEqual(expected, actual, 'Text is incorrect')
+
+
+    # TEST 4
+    def test_login_btn_visible(self):
+        lg_btn = self.driver.find_element(*self.LOGIN_BTN)
+        # assertTrue() to check true of test value
+        self.assertTrue(lg_btn.is_displayed(), "I don't see the login button!!!")
+
+    # TEST 5
+
+
+
+
+
+
+
+
+
+
 
 
 
