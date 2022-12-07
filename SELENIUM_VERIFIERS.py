@@ -77,6 +77,8 @@ or
 import unittest
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.common.by import By
 
@@ -162,8 +164,20 @@ class Login(unittest.TestCase):
         label_result2 = self.driver.find_element(By.XPATH, '//label[@for="password"]').text
         assert label_result2 == "Password"
 
-
-
+    # TEST 10
+    def test_valid_user_pas(self):
+        self.driver.find_element(By.ID, 'username').send_keys('tomsmith')
+        self.driver.find_element(By.ID, 'password').send_keys('SuperSecretPassword!')
+        self.driver.find_element(*self.LOGIN_BTN).click()
+        actual_url = self.driver.current_url
+        expected_url = 'https://the-internet.herokuapp.com/secure'
+        self.assertEqual(expected_url, actual_url, 'URL is incorrect')
+        elem = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'flash')))
+        elem = self.driver.find_element(By.CLASS_NAME, 'success')
+        self.assertTrue(elem.is_displayed(), 'SUBMIT BTN is not there!!!')
+        actual_msg = self.driver.find_element(By.CLASS_NAME, 'success').text
+        expected_msg = 'secure area'
+        self.assertTrue(expected_msg in actual_msg, 'Page title is incorrect')
 
 
 
