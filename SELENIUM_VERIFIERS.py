@@ -69,7 +69,7 @@ Password)
 - Find the item //h4
 - Take the text from him and spit after space. Considers every word as a potential password
 - uses an iterative structure by which to enter a row passwords and press on the login
-- Finally the test must printe:
+- Finally the test must print:
 'I failed to find the password'
 or
 'The secret password is [password]'
