@@ -11,8 +11,28 @@ freestyle to start thinking of some test scenarios yourself).
 import HtmlTestRunner
 import unittest
 
+from SELENIUM_VERIFIERS import Login
 from SELENIUM_ALERTS import Alerts
-from SELENIUM_CONTEXT_MENU import Context_menu
+from SELENIUM_CONTEXT_MENU import ContextMenu
 from SELENIUM_AUTH import Authentication
-from SELENIUM_KEYS import Keys
+from SELENIUM_KEYS import Keyboard
 
+
+class TestSuite(unittest.TestCase):
+
+    def test_suite(self):
+        smoke_test = unittest.TestSuite()
+        smoke_test.addTests([
+            unittest.defaultTestLoader.loadTestsFromTestCase(Login),
+            unittest.defaultTestLoader.loadTestsFromTestCase(Alerts),
+            unittest.defaultTestLoader.loadTestsFromTestCase(Authentication),
+            unittest.defaultTestLoader.loadTestsFromTestCase(ContextMenu),
+            unittest.defaultTestLoader.loadTestsFromTestCase(Keyboard)])
+
+        runner = HtmlTestRunner.HTMLTestRunner(
+            combine_reports=True,
+            report_title='Test Execution Report',
+            report_name='Test Results'
+        )
+
+        runner.run(smoke_test)

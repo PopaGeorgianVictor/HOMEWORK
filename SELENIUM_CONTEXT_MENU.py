@@ -8,7 +8,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
 
 
-class Context_menu(unittest.TestCase):
+class ContextMenu(unittest.TestCase):
 
 		BOX = (By.ID,"hot-spot")
 		def setUp(self) -> None:
