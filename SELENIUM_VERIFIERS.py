@@ -97,5 +97,17 @@ class Login(unittest.TestCase):
     def test_url(self):
         actual = self.driver.current_url
         expected = 'https://the-internet.herokuapp.com/login'
-        # assertEqual() to check equality of first & second value
-        self.assertEqual(actual, expected, 'URL is incorect')
+        self.assertEqual(actual, expected, 'URL is incorect') # assertEqual() to check equality of first & second value
+
+    # TEST 2
+    def test_page_title(self):
+        actual = self.driver.title
+        print('The title of the page is: ' , actual)
+        expected = 'The Internet'
+        self.assertEqual(expected, actual, 'Page title is incorrect')
+
+    # TEST 3
+
+
+
+
