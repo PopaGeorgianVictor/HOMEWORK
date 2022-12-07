@@ -148,6 +148,16 @@ class Login(unittest.TestCase):
         expected = 'Your username is invalid!'
         self.assertTrue(expected in actual, 'Error message text is incorrect')
 
+    # TEST 8
+    def test_close_error(self):
+        self.driver.find_element(*self.LOGIN_BTN).click()
+        self.driver.find_element(By.XPATH, '//*[@id="flash"]/a').click()  # close the error
+        error = self.driver.find_element(By.XPATH,'//*[@id="flash"]')
+        self.assertTrue(error.is_displayed(),'Error is not displayed')
+
+
+
+
 
 
 

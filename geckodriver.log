@@ -2273,3 +2273,29 @@ JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FA
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
 1670421896231	Marionette	INFO	Stopped listening on port 40103
+1670422372518	geckodriver	INFO	Listening on 127.0.0.1:40219
+1670422375543	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "40220" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileXk4nVm"
+1670422376062	Marionette	INFO	Marionette enabled
+1670422376067	Marionette	INFO	Listening on port 40229
+Read port: 40229
+WebDriver BiDi listening on ws://127.0.0.1:40220
+1670422376167	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileXk4nVm\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:40220/devtools/browser/abe31c98-2ceb-4d5c-be3a-1951869cae77
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
+1670422382307	Marionette	INFO	Stopped listening on port 40229
+1670422554799	geckodriver	INFO	Listening on 127.0.0.1:40267
+1670422557837	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "40268" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilesJq9IZ"
+1670422559112	Marionette	INFO	Marionette enabled
+1670422559117	Marionette	INFO	Listening on port 40278
+Read port: 40278
+WebDriver BiDi listening on ws://127.0.0.1:40268
+1670422559229	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilesJq9IZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:40268/devtools/browser/17d7a689-13db-4a3b-aab6-ba4c4692f318
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
+1670422566160	Marionette	INFO	Stopped listening on port 40278
