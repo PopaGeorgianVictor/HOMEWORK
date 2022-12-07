@@ -6,7 +6,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
 
 
-class Authentication_in_Firefox(unittest.TestCase):
+class Authentication(unittest.TestCase):
 
 		USERNAME = 'admin'
 		PASSWORD = 'admin'

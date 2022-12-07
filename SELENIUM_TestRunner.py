@@ -13,3 +13,4 @@ import unittest
 
 from SELENIUM_ALERTS import Alerts
 from SELENIUM_CONTEXT_MENU import Context_menu
+from SELENIUM_AUTH import Authentication
