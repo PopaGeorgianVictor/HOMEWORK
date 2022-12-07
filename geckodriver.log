@@ -2299,3 +2299,15 @@ JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FA
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://the-internet.herokuapp.com."
 1670422566160	Marionette	INFO	Stopped listening on port 40278
+1670422906730	geckodriver	INFO	Listening on 127.0.0.1:40331
+1670422909769	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "40332" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilerXYMZP"
+1670422910184	Marionette	INFO	Marionette enabled
+1670422910189	Marionette	INFO	Listening on port 40341
+Read port: 40341
+WebDriver BiDi listening on ws://127.0.0.1:40332
+1670422910287	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilerXYMZP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:40332/devtools/browser/978bbe3b-5b57-42e2-b566-bda23651f224
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1670422915623	Marionette	INFO	Stopped listening on port 40341
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 693: TypeError: this.tablesData[table] is undefined

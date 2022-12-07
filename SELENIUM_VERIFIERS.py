@@ -155,8 +155,12 @@ class Login(unittest.TestCase):
         error = self.driver.find_element(By.XPATH,'//*[@id="flash"]')
         self.assertTrue(error.is_displayed(),'Error is not displayed')
 
-
-
+    # TEST 9
+    def test_labels(self):
+        label_result1 = self.driver.find_element(By.XPATH, '//label[@for="username"]').text
+        assert label_result1 == "Username"
+        label_result2 = self.driver.find_element(By.XPATH, '//label[@for="password"]').text
+        assert label_result2 == "Password"
 
 
 
