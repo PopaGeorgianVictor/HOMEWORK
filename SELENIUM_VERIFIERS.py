@@ -1,4 +1,3 @@
-
 ''' Implements a login class to inherit unittest.Testcase
 
 Find the items at the top using what selectors you want:
@@ -75,5 +74,28 @@ Password)
 or
 'The secret password is [password]'
 '''
+import unittest
+from selenium import webdriver
+from selenium.webdriver.firefox.service import Service
+from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.common.by import By
 
 
+class Login(unittest.TestCase):
+
+    def setUp(self) -> None:
+        self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+        self.driver.maximize_window()
+        self.driver.get("https://the-internet.herokuapp.com/")
+        self.driver.implicitly_wait(3)
+        self.driver.find_element(By.XPATH, '//*[@id="content"]/ul/li[21]/a').click()
+
+    def tearDown(self) -> None:
+        self.driver.quit()
+
+    # TEST 1
+    def test_url(self):
+        actual = self.driver.current_url
+        expected = 'https://the-internet.herokuapp.com/login'
+        # assertEqual() to check equality of first & second value
+        self.assertEqual(actual, expected, 'URL is incorect')
