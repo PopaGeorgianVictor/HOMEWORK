@@ -125,6 +125,31 @@ class Login(unittest.TestCase):
         self.assertTrue(lg_btn.is_displayed(), "I don't see the login button!!!")
 
     # TEST 5
+    def test_elem_atribute(self):
+        actual = self.driver.find_element(By.XPATH, '//*[@id="page-footer"]/div/div/a').get_attribute('href')
+        # get href attribute
+        print('LINK:', actual)
+        expected = 'http://elementalselenium.com/'
+        self.assertEqual(expected, actual, 'Elemental Selenium button href attribute is wrong')
+
+    # TEST 6
+    def test_empty_user_password(self):
+        self.driver.find_element(*self.LOGIN_BTN).click()
+        error = self.driver.find_element(By.XPATH, '//*[@id="flash"]')
+        self.assertTrue(error.is_displayed(), 'Error is not here!!!')
+
+    # TEST 7
+    def test_error_invalid_user_pass(self):
+        self.driver.find_element(By.ID, 'username').send_keys('sound check, sound check')
+        self.driver.find_element(By.ID, 'password').send_keys('microfonul e suspect')
+        self.driver.find_element(*self.LOGIN_BTN).click()
+        actual = self.driver.find_element(By.XPATH, '//*[@id="flash"]').text
+        print('Message error is:', actual)
+        expected = 'Your username is invalid!'
+        self.assertTrue(expected in actual, 'Error message text is incorrect')
+
+
+
 
 
 
