@@ -11,11 +11,11 @@ freestyle to start thinking of some test scenarios yourself).
 import HtmlTestRunner
 import unittest
 
-from SELENIUM_VERIFIERS import Login
-from SELENIUM_ALERTS import Alerts
-from SELENIUM_CONTEXT_MENU import ContextMenu
-from SELENIUM_AUTH import Authentication
-from SELENIUM_KEYS import Keyboard
+from SE_Verifiers import Login
+from SE_Alerts import Alerts
+from SE_Context_Menu import ContextMenu
+from SE_Authentication import Authentication
+from SE_Keys import Keyboard
 
 
 class TestSuite(unittest.TestCase):
