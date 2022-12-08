@@ -1,7 +1,7 @@
 
 import unittest
+import HTMLTestRunner
 from selenium import webdriver
-from selenium.webdriver import ActionChains
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
 
@@ -21,3 +21,8 @@ class Authentication(unittest.TestCase):
 
 		def test_auth(self):
 				self.driver.get('https://' + self.USERNAME + ':' + self.PASSWORD + '@the-inernet.herokuapp.com/basic_auth')
+
+
+if __name__ == '__main__' :
+	unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/HOMEWORK/report'))
+

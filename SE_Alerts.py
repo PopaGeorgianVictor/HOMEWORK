@@ -1,5 +1,6 @@
 
 import unittest
+import HTMLTestRunner
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
@@ -91,4 +92,10 @@ class Alerts(unittest.TestCase):
 				js_prompt_text = self.driver.find_element(*self.JS_ALERT_TEXT).text
 				expected_text = f"You entered: null"
 				assert js_prompt_text == expected_text, f"Error: expected: {expected_text}, actual: {js_prompt_text}"
+
+
+
+if __name__ == '__main__' :
+	unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/HOMEWORK/report'))
+
 

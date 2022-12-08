@@ -1,6 +1,7 @@
 
 import time
 import unittest
+import HTMLTestRunner
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -33,3 +34,6 @@ class Keyboard(unittest.TestCase):
 				time.sleep(2)
 				user.send_keys(Keys.ARROW_LEFT)
 				time.sleep(2)
+
+if __name__ == '__main__' :
+	unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/HOMEWORK/report'))

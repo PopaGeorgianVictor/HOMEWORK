@@ -8,10 +8,11 @@ freestyle to start thinking of some test scenarios yourself).
 
 '''
 
-import HtmlTestRunner
 import unittest
+import HtmlTestRunner
 
-from SE_Verifiers import Login
+
+from HOMEWORK.SE_Verifiers import Login
 from SE_Alerts import Alerts
 from SE_Context_Menu import ContextMenu
 from SE_Authentication import Authentication
@@ -36,3 +37,4 @@ class TestSuite(unittest.TestCase):
         )
 
         runner.run(smoke_test)
+

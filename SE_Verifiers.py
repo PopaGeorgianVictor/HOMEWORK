@@ -74,7 +74,9 @@ Password)
 or
 'The secret password is [password]'
 '''
+
 import unittest
+import HTMLTestRunner
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.support.wait import WebDriverWait
@@ -83,10 +85,12 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.common.by import By
 
 
+
 class Login(unittest.TestCase):
     LOGIN_BTN = (By.XPATH, '//*[@id="login"]/button/i')
     USERNAME = (By.XPATH, '//input[@id="username"]')
     PASSWORD = (By.XPATH, '//input[@id="password"]')
+
 
     def setUp(self) -> None:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
@@ -191,8 +195,8 @@ class Login(unittest.TestCase):
         self.assertEqual(expected_url, actual_url, 'URL is incorrect')
 
 
-
-
+if __name__ == '__main__' :
+    unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/HOMEWORK/report'))
 
 
 

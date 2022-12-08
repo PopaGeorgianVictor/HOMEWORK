@@ -1,6 +1,7 @@
 
 import time
 import unittest
+import HTMLTestRunner
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver import ActionChains
@@ -27,3 +28,6 @@ class ContextMenu(unittest.TestCase):
 				time.sleep(3)
 				self.driver.switch_to.alert.accept()
 				time.sleep(2)
+
+if __name__ == '__main__' :
+	unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/HOMEWORK/report'))
