@@ -7,7 +7,8 @@ class Home_page(Base_page):
 
     def navigate_to_homepage(self):
         self.driver.get()
-    def clk_on_form(self):
+    def click_on_form(self):
+
 
 
 

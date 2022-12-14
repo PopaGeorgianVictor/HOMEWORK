@@ -5,6 +5,7 @@ from selenium.webdriver.firefox.service import Service
 
 class Browser():
     driver = webdriver.Chrome(service=Service(GeckoDriverManager().install()))
+    driver.get("https://the-internet.herokuapp.com/")
     driver.maximize_window()
     driver.implicitly_wait(2)
 
