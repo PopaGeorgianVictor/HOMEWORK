@@ -7,10 +7,10 @@ class Home_page(Base_page):
     FORM_BTN = ()
 
 
-    def navigate(self):
+    def navigate_to_page(self):
         self.driver.get()
 
-    def adsd(self)
+    def click_on_form(self)
         self.driver.find_element(*self.FORM_BTN).click()
 
 
