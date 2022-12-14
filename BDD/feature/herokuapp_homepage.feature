@@ -17,3 +17,8 @@ Feature: Testing access to the pages: '/login', '/secure' of herokuapp
     Given Secure Page: I am on '/secure' page
     When Secure Page: I click on Logout button
     Then : I successfully logout and redirect to the '/login' page
+
+   Scenario: Check if the info message 'You logged into a secure area!' appears  on '/secure' page
+    Given Secure Page: I am on '/secure' page
+    When Secure Page: I click on Logout button
+    Then : I successfully logout and redirect to the '/login' page
