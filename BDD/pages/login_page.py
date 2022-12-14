@@ -6,6 +6,9 @@ class Home_page(Base_page):
     PASSWORD = ()
     LOGIN_BTN = ()
 
+    def complete_field(self):
+        self.driver.find_element(*self.USERNAME).send_keys("tomsmith")
+        self.driver.find_element(*self.PASSWORD).send_keys("SuperSecretPassword!")
 
 
 
