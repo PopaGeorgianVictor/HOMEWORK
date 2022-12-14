@@ -446,7 +446,7 @@ You will have 3 options
 ● You guessed it. Congratulations! You chose x and the die was y
 '''
 
-# method 1
+
 
 import random
 dice_roll = random.randint(1,6)
@@ -463,3 +463,35 @@ else:
 
 
 
+
+
+
+"""
+If a client has over 65 years, then it will be offered to him a discount of 15%.
+Otherwise if the customer does not have over 65 years, if the person travels with at
+least one child they will have a discount of 10%
+For both seniors and non seniors it will be applied an additional discount of 10% if they
+will travel during winter.
+Also, for both seniors and non seniors it will be applied a 3% luxury fee if they will travel
+in the first class (in any season) or 1% handling fee otherwise.
+"""
+
+age = int(input("Please enter your age: "))
+season = input("Please enter the season: ")
+travel_class = int(input("Please enter the class you are traveling in: "))
+price = int(input("Please enter the price of the ticket: "))
+discount = 0
+if age > 65:
+    discount = 0.15
+else:
+    nr_childrens = int(input("Please enter the number of children you are traveling with: "))
+    if nr_childrens > 0:
+        discount = 0.1
+if season == 'iarna':
+    discount += 0.1
+if travel_class == 1:
+    tax = 0.03
+else:
+    tax = 0.01
+price = price - price * discount + price * tax
+print(price)
