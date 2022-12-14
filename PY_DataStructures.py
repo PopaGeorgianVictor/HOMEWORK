@@ -35,8 +35,6 @@ print(count_DO)
 
 
 
-
-
 ''' Having 2 lists: [3, 1, 0, 2] and [6, 5, 4]. Join them in one list'''
 
 # concatenation (+) operator
@@ -186,7 +184,8 @@ print('New students and grade are' , d)
 
 
 
-'''# Having the sets: weekdays = {'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'} and weekend = {'Saturday','Sunday'}
+'''# Having the sets: weekdays = {'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'} and 
+weekend = {'Saturday','Sunday'}
      # check condition: sets cannot contain duplicates. Duplicates are discarded when initializing a set
      # check if weekend is a subset of weekdays or not
      # show the differences between sets
