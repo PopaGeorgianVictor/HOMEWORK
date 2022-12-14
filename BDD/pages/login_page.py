@@ -10,5 +10,7 @@ class Home_page(Base_page):
         self.driver.find_element(*self.USERNAME).send_keys("tomsmith")
         self.driver.find_element(*self.PASSWORD).send_keys("SuperSecretPassword!")
 
+    def login(self):
+        self.driver.find_element(*self.LOGIN_BTN).click()
 
 
