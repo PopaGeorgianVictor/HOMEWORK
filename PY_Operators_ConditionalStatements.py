@@ -495,3 +495,33 @@ else:
     tax = 0.01
 price = price - price * discount + price * tax
 print(price)
+
+
+''' Phone call !!!
+ * choose the language, for Romanian press 1, for English press 2 , print the language you selected
+ * for private individual  press 1, for juridical person press 2 , print the person you selected
+ * if option is invalid print a message
+ * treat each scenario separately '''
+
+optiune = int(input("Alegeti limba, pentru romana apasati 1, pentru engleza apasati 2"))
+if optiune == 1:
+    print("Ati ales limba romana")
+    optiune1 = input("pentru persoane fizice apasati 1, pentru persoane juridice apasati 2")
+    if(optiune1 == 1):
+        print("Ati ales persoana fizica")
+    elif(optiune1 == 2):
+        print("Ati ales persoana juridica")
+    else:
+        print("Optiune invalida, va rugam sa incercati din nou")
+elif optiune == 2:
+    print("You chose english")
+    optiune1 = input("For individual persons press one, for companies press 2")
+    if (optiune1 == 1):
+        print("You chose individual person")
+    elif (optiune1 == 2):
+        print("You chose a company")
+    else:
+        print("Invalid option, please try again")
+elif optiune == 3:
+    print("return to main menu")
+
