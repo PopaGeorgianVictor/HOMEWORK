@@ -24,7 +24,6 @@ else:
 
 
 
-
 '''Checks and displays whether x is a positive, negative, or neutral number'''
 
 # using if-elif-else statement
@@ -43,8 +42,6 @@ else:
 n = float(input("Enter the number:  "))
 x = ["positive" if n>0 else "negative" if n<0 else "zero" ]
 print(x)
-
-
 
 
 
@@ -86,7 +83,6 @@ else:
 
 
 
-
 ''''Checks if x is NOT between 5 and 2'''
 
 # check if the number is not greater than 5 and not less than 27
@@ -115,7 +111,6 @@ if nr not in interval:
     print(nr, 'is not in the range')
 else:
     print(nr, 'is in the range')
-
 
 
 
@@ -205,7 +200,6 @@ print(w)
 
 
 
-
 '''Convert and print notes from the Romanian system to >
 Over 9 => A
 Over 8 => B
@@ -234,7 +228,6 @@ else:
 
 
 
-
 '''Checks if x has at least 4 digits'''
 
 # len() function
@@ -251,7 +244,6 @@ else:
 x = int(input("The value of x is: "))
 n = [f"Number  {x} has {len(str(x))} digits" if len(str(x)) >= 4 else f"Number {x} does not have a minimum of 4 digits" ]
 print(n)
-
 
 
 
@@ -380,8 +372,6 @@ print(a)
 
 
 
-
-
 ''' Given the string: 'Coral is either the stupidest animal or the smartest rock'
       # read an int x from the keyboard
       # display the string without the last x characters
@@ -394,8 +384,6 @@ print(coral_my_favorite_animal[:- x])
 
 new_coral_my_favorite_animal = coral_my_favorite_animal[:5] + coral_my_favorite_animal[-5:]
 print(new_coral_my_favorite_animal)
-
-
 
 
 
@@ -419,16 +407,12 @@ print(coral_my_favorite_animal[:word_index])
 
 
 
-
-
 '''Read a string from the keyboard.Checks if the first and last characters are the same'''
 
 # assert method
 
 x = input('Your favorite word is: ')
 assert  x[0].capitalize() == x[-1].capitalize(), 'the first and last character are different'
-
-
 
 
 
@@ -452,7 +436,6 @@ print(f"Odd numbers is: {str[1::2]}")
 
 '''Guess the dice game:
 
-* search the net and see how a random number is generated
 * we imagine you roll the dice and save this number in dice_roll
 * take a guessed number from the user
 * check and display if the user guessed
