@@ -20,6 +20,10 @@ class Circle():
     def circle_description(self):
         print(f"The color of the circle is {self.color} and the radius is {self.radius} ")
 
+    def object_like_circle(self):
+        print(f'\tColor is {self.color}')
+        print(f'\tRadius is {self.radius}')
+
     def area(self):
         return  f'Area is {pi * (self.radius)**2}'
 
@@ -48,7 +52,20 @@ print(circle1.perimeter())
 print(circle2.perimeter())
 
 
+clock = Circle("PINK", 7)
+coin = Circle("GOLD", 5)
 
+print(f"My kinky clock have specification below: ")
+clock.object_like_circle()
+print(f"\t{clock.area()}")
+print(f"\t{clock.diameter()}")
+print(f"\t{clock.perimeter()}")
+print()
+print(f"My collectible coin have specification below: ")
+coin.object_like_circle()
+print(f"\t{coin.area()}")
+print(f"\t{coin.diameter()}")
+print(f"\t{coin.perimeter()}")
 
 
 
