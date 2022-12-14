@@ -157,10 +157,6 @@ else:
 
 
 
-
-
-
-
 '''x,y,z - the sides of a triangle. Check whether a Triangle is Equilateral, Isosceles or Scalene'''
 
 # if-elif-else statement
@@ -176,10 +172,6 @@ elif x==y or y==z or z==x:
    print("The triangle is isosceles")
 else:
    print("The triangle is scalene")
-
-
-
-
 
 
 
@@ -214,6 +206,33 @@ print(w)
 
 
 
+'''Convert and print notes from the Romanian system to >
+Over 9 => A
+Over 8 => B
+Over 7 => C
+Over 6 => D
+Over 4 => E
+4 or below => F'''
+
+nota = int(input("Enter a note from the Romanian system: "))
+if nota > 9:
+    print(f"The grade {nota} is represented by A")
+elif nota >= 8:
+    print(f"The grade {nota} is represented by B")
+elif nota >= 7:
+    print(f"The grade {nota} is represented by C")
+elif nota >= 6:
+    print(f"The grade {nota} is represented by D")
+elif nota > 4:
+    print(f"The grade {nota} is represented by E")
+else:
+    print(f"The grade {nota} is represented by F")
+
+
+
+
+
+
 
 
 '''Checks if x has at least 4 digits'''
@@ -232,8 +251,6 @@ else:
 x = int(input("The value of x is: "))
 n = [f"Number  {x} has {len(str(x))} digits" if len(str(x)) >= 4 else f"Number {x} does not have a minimum of 4 digits" ]
 print(n)
-
-
 
 
 
@@ -419,8 +436,6 @@ assert  x[0].capitalize() == x[-1].capitalize(), 'the first and last character a
 
 
 
-
-
 '''
   Given the string:  '0123456789'
       # show even numbers only
@@ -432,6 +447,36 @@ print(f"Even numbers are: {str[::2]}")
 print(f"Odd numbers is: {str[1::2]}")
 
 
+
+
+
+'''Guess the dice game:
+
+* search the net and see how a random number is generated
+* we imagine you roll the dice and save this number in dice_roll
+* take a guessed number from the user
+* check and display if the user guessed
+
+You will have 3 options
+● You lost. You chose a smaller number. You chose x but it was y
+● You lost. You chose a higher number. You chose x but it was y
+● You guessed it. Congratulations! You chose x and the die was y
+
+
+'''
+
+# method 1
+
+import random
+dice_roll = random.randint(1,6)
+guess =  int(input("Guess the number from dice roll: "))
+if guess == dice_roll:
+    print(f"I played and chose {guess} and the dice was {dice_roll}, I won!")
+else:
+    if guess > dice_roll:
+        print(f"You are a failure. You chose a higher number. You chose {guess} but the die was {dice_roll}")
+    else:
+        print(f"You are a failure.You chose a smaller number. You chose {guess} but the die was {dice_roll}")
 
 
 
