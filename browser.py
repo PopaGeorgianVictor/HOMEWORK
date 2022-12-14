@@ -9,6 +9,7 @@ class Browser():
     driver.implicitly_wait(2)
 
 
+
     def close(self):
         self.driver.delete_all_cookies()
         self.driver.quit()
