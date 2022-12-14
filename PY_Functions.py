@@ -313,3 +313,18 @@ def x_mas_counting():
 
 
 x_mas_counting()
+
+
+
+
+
+''' Using *args building a calculator which only performs multiplication'''
+
+def multiplyNumbers(*numbers):
+    multiply = 1
+    for n in numbers:
+        multiply  *= n
+    return multiply
+
+
+print("multiply:", multiplyNumbers(4, 4, 4, 4, 4, 4, 4 ,6 ,7, 7)) # we can add any numbers we want
