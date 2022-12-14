@@ -323,7 +323,6 @@ print('Sorted list is: ' , sorted_list)
 
 
 
-
 '''
  Number riddles:
       # secret_number = generate a random number between 1 and 30
@@ -349,7 +348,6 @@ else:
         print("Secret number it's bigger")
     else:
         print("Secret number it's smaller")
-
 
 
 
@@ -403,7 +401,6 @@ phone_keyboard = [[1,2,3], [4,5,6], [7,8,9], [0]]
 for key in phone_keyboard:
    for phone in key:
        print('The current figure is :', phone)
-
 
 
 
