@@ -444,8 +444,6 @@ You will have 3 options
 ● You lost. You chose a smaller number. You chose x but it was y
 ● You lost. You chose a higher number. You chose x but it was y
 ● You guessed it. Congratulations! You chose x and the die was y
-
-
 '''
 
 # method 1
