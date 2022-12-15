@@ -78,18 +78,18 @@ driver.find_element(By.LINK_TEXT, 'How I learned Selenium in 4 weeks').click()
 driver.find_element(By.LINK_TEXT, 'A Complete Guide to API Development').click()
 
 
-# find element By.PARTIAL_LINK_TEXT
+# find_element(By.PARTIAL_LINK_TEXT)
 
 driver.get(url)
 # this is for accepting Cookies
 driver.find_element(By.ID, 'ez-accept-all').click()
 
-driver.find_element(By.PARTIAL_LINK_TEXT ,'Development').click()
-driver.find_element(By.PARTIAL_LINK_TEXT ,'Selenium').click()
-driver.find_element(By.PARTIAL_LINK_TEXT ,'API').click()
+driver.find_element(By.PARTIAL_LINK_TEXT ,'Development Trends').click()
+driver.find_element(By.PARTIAL_LINK_TEXT ,'learned Selenium').click()
+driver.find_element(By.PARTIAL_LINK_TEXT ,'API Development').click()
 
 
-# find element By.TAG_NAME
+# find_element(By.TAG_NAME)
 
 driver.get(url)
 # this is for accepting Cookies
@@ -101,7 +101,7 @@ tags_list[0].send_keys('Georgian')
 tags_list[1].send_keys('Popa')
 tags_list[2].click()
 
-# find element By.CLASS_NAME
+# find_element(By.CLASS_NAME)
 
 driver.get(url1)
 
