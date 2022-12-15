@@ -35,5 +35,6 @@ class Keyboard(unittest.TestCase):
 				user.send_keys(Keys.ARROW_LEFT)
 				time.sleep(2)
 
+
 if __name__ == '__main__' :
 	unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/HOMEWORK/report'))

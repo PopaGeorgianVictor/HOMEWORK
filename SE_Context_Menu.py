@@ -29,5 +29,6 @@ class ContextMenu(unittest.TestCase):
 				self.driver.switch_to.alert.accept()
 				time.sleep(2)
 
+
 if __name__ == '__main__' :
 	unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/HOMEWORK/report'))
