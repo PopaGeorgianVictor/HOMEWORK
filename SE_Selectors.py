@@ -114,17 +114,17 @@ class_list[3].click()
 
 
 
-# find element By.CLASS_NAME
+# find_element(By.CSS_SELECTOR)
 
 driver.get(url1)
 
 driver.find_element(By.CSS_SELECTOR,'#first-name').send_keys('Geo') # by ID
 driver.find_element(By.CSS_SELECTOR,'.form-control').send_keys('Geo') # by class
 driver.find_element(By.CSS_SELECTOR,'[placeholder="Enter your job title"]').send_keys('QA') # by attribute=value
-driver.find_element(By.CSS_SELECTOR,'*[placeholder*="first name"]').send_keys('Geo) # by attribute=partial_value
+driver.find_element(By.CSS_SELECTOR,'*[placeholder*="first name"]').send_keys('Geo') # by attribute=partial_value
 
 
-'''Find element By.XPATH'''
+'''find_element(By.XPATH)'''
 
 driver.get(url1)
 
@@ -139,7 +139,7 @@ driver.find_element(By.XPATH, '//input[@id="job-title"]').send_keys('QA')
 driver.find_element(By.XPATH, '//*[@id="first-name"]').send_keys('Geo')
 
 
-select elements from the list
+# select elements from the list
 
 driver.find_element(By.XPATH, '(//input[@class="form-control"])[1]').send_keys('Geo')
 
