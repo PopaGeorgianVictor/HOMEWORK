@@ -38,15 +38,12 @@ from selenium.webdriver.common.by import By
 url = 'https://www.techlistic.com/p/selenium-practice-form.html'
 url1 = 'https://formy-project.herokuapp.com/form'
 
-
-
-
 driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
 driver.maximize_window()
+driver.implicitly_wait(3)
 
 
-
-# find element By.ID
+# find_element(By.ID)
 
 driver.get(url)
 # this is for accepting Cookies
@@ -59,7 +56,7 @@ driver.find_element(By.ID, 'datepicker').send_keys('29.11.2022')
 
 
 
-# find element By.NAME
+# find_element(By.NAME)
 
 driver.get(url)
 # this is for accepting Cookies
@@ -70,7 +67,7 @@ driver.find_element(By.NAME, 'lastname').send_keys('Popa')
 driver.find_element(By.NAME, 'profession').click()
 
 
-# find element By.LINK_TEXT
+# find_element(By.LINK_TEXT)
 
 driver.get(url)
 # this is for accepting Cookies
