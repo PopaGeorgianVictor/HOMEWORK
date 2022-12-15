@@ -29,9 +29,6 @@
         * define new method  describe() - print 'I have no corners'
         * create an object of type Square and play with its methods
         * create a Circle object and play with its methods
-
-
-
 '''
 
 from abc import ABC, abstractmethod
