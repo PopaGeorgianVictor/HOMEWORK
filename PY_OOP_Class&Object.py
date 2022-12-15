@@ -88,6 +88,10 @@ class Rectangle():
 
     def rectangle_description(self):
         print(f"The rectangle has the color {self.color}, the length is {self.length} and the width is shown as {self.width}")
+    def object_like_rectangle(self):
+        print(f'\tColor is {self.color}')
+        print(f'\tLength is {self.length}')
+        print(f'\tWidth is {self.width}')
 
     def area(self):
         return  f'Area is {self.width * self.length}'
