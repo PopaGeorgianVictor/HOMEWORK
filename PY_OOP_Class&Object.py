@@ -394,23 +394,10 @@ car2.brake()
 
 
 
-''' The TodoList class
-Attributes: todo (dict, the key is the task name, the value is the description)
-At the beginning we have no tasks, dict is empty and we don't need a constructor
-Methods:
-● add_task(name, description) - will be added to the dict
-● complete_task(name) - will be deleted from the dict
-● show_todo_list() - just the keys
-● display_additional_details(task_name) - depending on the task name,
-we print additional details.
-○ If the task is not in the todo list, we ask the user if he wants it
-add.
-○ If he answers no - goodbye
-○ If he answers yes - we ask him for task details and save name+details in
-dict
 
 
-'''
+
+
 
 
 
