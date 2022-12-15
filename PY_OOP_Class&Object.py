@@ -67,24 +67,6 @@ print(f"\t{coin.area()}")
 print(f"\t{coin.diameter()}")
 print(f"\t{coin.perimeter()}")
 
-print()
-
-book = Rectangle(7,4,"RED")
-table = Rectangle(100,50,"BROWN")
-
-print("My favorite book have specification below: ")
-book.object_like_rectangle()
-print(f"\t{book.area()}")
-print(f"\t{book.perimeter()}")
-print()
-print("My kitchen table have specification below: ")
-table.object_like_rectangle()
-print(f"\t{table.area()}")
-print(f"\t{table.perimeter()}")
-print()
-print(f"Time has passed over my favorite book. Now, the new specifications are: ")
-book.change_color("slight brown tint")
-book.object_like_rectangle()
 
 
 
@@ -132,6 +114,25 @@ d1.change_color('BLUE')
 d2.change_color('BLUE')
 d1.rectangle_description()
 d2.rectangle_description()
+
+print()
+
+book = Rectangle(7,4,"RED")
+table = Rectangle(100,50,"BROWN")
+
+print("My favorite book have specification below: ")
+book.object_like_rectangle()
+print(f"\t{book.area()}")
+print(f"\t{book.perimeter()}")
+print()
+print("My kitchen table have specification below: ")
+table.object_like_rectangle()
+print(f"\t{table.area()}")
+print(f"\t{table.perimeter()}")
+print()
+print(f"Time has passed over my favorite book. Now, the new specifications are: ")
+book.change_color("slight brown tint")
+book.object_like_rectangle()
 
 
 
