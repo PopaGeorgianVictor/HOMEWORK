@@ -143,8 +143,6 @@ book.object_like_rectangle()
 
 
 
-
-
 '''class Employee(). Attributes: surname, forename ,salary. Constructor for both attributes
      Methods:
       * employee_description() - will PRINT name, surname, salary
@@ -392,6 +390,8 @@ car2.accelerate(7)
 print('-' * 100)
 car1.brake()
 car2.brake()
+
+
 
 
 
