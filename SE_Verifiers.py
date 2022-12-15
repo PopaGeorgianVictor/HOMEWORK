@@ -71,9 +71,10 @@ Password)
 - uses an iterative structure by which to enter a row passwords and press on the login
 - Finally the test must print:
 'I failed to find the password'
-or
+  or
 'The secret password is [password]'
 '''
+
 
 import unittest
 import HTMLTestRunner
