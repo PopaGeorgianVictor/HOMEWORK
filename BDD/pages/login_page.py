@@ -7,6 +7,7 @@ class Login_page(Base_page):
     PASSWORD = (By.ID, 'password')
     LOGIN_BTN = (By.CSS_SELECTOR, '.fa.fa-2x.fa-sign-in')
     LOGOUT_BTN =(By.CSS_SELECTOR, '.icon-2x.icon-signout')
+    INFO_MSG = (By.ID, 'flash')
 
 
     def complete_field(self):
