@@ -12,3 +12,4 @@ def step_impl(context):
 @then("I am able to enter on page")
 def step_impl(context):
     context.home_page_object.redirect_to_login_page()
+
