@@ -1,4 +1,4 @@
-Feature: Testing access to the pages '/login', '/secure' of herokuapp and info message is displayed on this pages
+Feature: Testing access to '/login' page
 
   Scenario: Check that the user can access '/login' page of herokuapp
     Given : I am on herokuapp homepage
