@@ -6,6 +6,8 @@ class Login_page(Base_page):
     USERNAME = (By.ID, 'username')
     PASSWORD = (By.ID, 'password')
     LOGIN_BTN = (By.CSS_SELECTOR, '.fa.fa-2x.fa-sign-in')
+    LOGOUT_BTN =(By.CSS_SELECTOR, '.icon-2x.icon-signout')
+
 
     def complete_field(self):
         self.driver.find_element(*self.USERNAME).send_keys("tomsmith")
@@ -15,3 +17,10 @@ class Login_page(Base_page):
         self.driver.find_element(*self.LOGIN_BTN).click()
 
     def redirect_to_secure(self):
+        try:
+            self.driver.find_element(*self.LOGOUT_BTN)
+            print('Element exist')
+
+        except NoSuchElementException:
+            print("Element does not exist")
+
