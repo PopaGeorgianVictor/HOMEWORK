@@ -1,5 +1,5 @@
 
-from BDD.pages.login_page import Home_page
+from BDD.pages.login_page import Home_page, Login_page
 from browser import Browser
 
 
