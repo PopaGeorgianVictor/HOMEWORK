@@ -8,3 +8,7 @@ def step_impl(context):
 @when("I click on Form Authentication")
 def step_impl(context):
     context.home_page_object.click_on_form()
+
+@then("I am able to enter on page")
+def step_impl(context):
+    context.home_page_object
