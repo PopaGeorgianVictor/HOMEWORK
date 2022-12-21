@@ -7,3 +7,7 @@ def step_impl(context):
 @when("I clicked on Login button")
 def step_impl(context):
     context.login_page_object.login()
+
+@then("I successfully enter on '/secure' page")
+def step_impl(context):
+    context.
