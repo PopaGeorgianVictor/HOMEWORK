@@ -13,3 +13,5 @@ class Login_page(Base_page):
 
     def login(self):
         self.driver.find_element(*self.LOGIN_BTN).click()
+
+    def redirect_to_secure(self):
