@@ -3,6 +3,5 @@ Feature: Testing logout buton and if info message is displayed on '/login' page 
 
   Scenario: Check that the user can access '/secure' page of herokuapp
     Given : I am on '/secure' page
-    When : I enter correct username and password
-    When : I clicked on Login button
-    Then : I successfully enter on '/secure' page and info message 'You logged into a secure area!' is displayed in a green tab
+    When : I clicked on Logout button
+    Then : I successfully logout and redirect to the '/login' page and info message ' You logged out of the secure area!' is displayed in a green tab
