@@ -15,9 +15,8 @@ class Home_page(Base_page):
 
     def redirect_to_login_page(self):
         try:
-            elem = self.driver.find_element(*self.LOGIN_BTN)
+            self.driver.find_element(*self.LOGIN_BTN)
             print('Element exist')
-            print(elem)
 
         except NoSuchElementException:
             print("Element does not exist")
