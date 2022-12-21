@@ -26,3 +26,7 @@ class Login_page(Base_page):
             print("Element does not exist")
 
     def info_msg(self):
+        info_msg_text = self.driver.find_element(*self.INFO_MSG).text
+        expected_text = " You logged into a secure area!"
+        assert info_msg_text == expected_text, f"Error: expected: {expected_text}, actual: {info_msg_text}"
+
