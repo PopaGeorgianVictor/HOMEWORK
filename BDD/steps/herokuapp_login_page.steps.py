@@ -10,4 +10,4 @@ def step_impl(context):
 
 @then("I successfully enter on '/secure' page")
 def step_impl(context):
-    context.
+    context.login_page_object.redirect_to_secure()
