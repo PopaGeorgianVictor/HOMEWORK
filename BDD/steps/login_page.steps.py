@@ -8,6 +8,6 @@ def step_impl(context):
 def step_impl(context):
     context.login_page_object.login()
 
-@then("I successfully enter on '/secure' page")
+@then("I successfully enter on '/secure' page and info message 'You logged into a secure area!' is displayed in a green tab")
 def step_impl(context):
     context.login_page_object.redirect_to_secure()
