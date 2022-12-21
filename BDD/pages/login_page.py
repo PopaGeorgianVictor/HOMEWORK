@@ -24,3 +24,4 @@ class Login_page(Base_page):
         except NoSuchElementException:
             print("Element does not exist")
 
+    def info_msg(self):
