@@ -7,6 +7,7 @@ def before_all(context):
     context.browser = Browser()
     context.home_page_object = Home_page()
     context.login_page_object = Login_page()
+    context.logout_page_object = Logout_page()
 
 def after_all(context):
     context.browser.close()
