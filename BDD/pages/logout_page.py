@@ -8,6 +8,7 @@ class Logout_page(Base_page):
     LOGOUT_BTN = (By.CSS_SELECTOR, '.icon-2x.icon-signout')
     LOGIN_BTN = (By.CSS_SELECTOR, '.fa.fa-2x.fa-sign-in')
     INFO_MSG = (By.ID, 'flash')
+
     def logout(self):
         self.driver.find_element(*self.LOGOUT_BTN).click()
 
