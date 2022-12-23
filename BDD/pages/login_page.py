@@ -1,9 +1,9 @@
 from selenium.webdriver.common.by import By
-from BDD.pages.base_page import Base_page
+from BDD.pages.base_page import BasePage
 from selenium.common import NoSuchElementException
 import time
 
-class Login_page(Base_page):
+class LoginPage(BasePage):
 
     USERNAME = (By.ID, 'username')
     PASSWORD = (By.ID, 'password')
