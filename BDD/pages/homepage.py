@@ -1,10 +1,10 @@
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
-from BDD.pages.base_page import Base_page
+from BDD.pages.base_page import BasePage
 import time
 
 
-class Home_page(Base_page):
+class HomePage(BasePage):
     FORM_BTN = (By.CSS_SELECTOR, "a[href='/login']")
     LOGIN_BTN = (By.CSS_SELECTOR, '.fa.fa-2x.fa-sign-in')
 

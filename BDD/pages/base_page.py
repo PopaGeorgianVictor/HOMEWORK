@@ -1,3 +1,3 @@
 
-class Base_page(Browser):
+class BasePage(Browser):
     pass
