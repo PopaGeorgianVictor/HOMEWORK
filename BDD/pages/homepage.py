@@ -11,7 +11,7 @@ class Home_page(Base_page):
     def navigate_to_page(self):
         self.driver.get()
 
-    def click_on_form(self)
+    def click_on_form(self):
         self.driver.find_element(*self.FORM_BTN).click()
 
     def redirect_to_login_page(self):
