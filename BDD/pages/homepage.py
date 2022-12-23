@@ -1,6 +1,7 @@
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from BDD.pages.base_page import Base_page
+import time
 
 
 class Home_page(Base_page):
@@ -14,6 +15,9 @@ class Home_page(Base_page):
         self.driver.find_element(*self.FORM_BTN).click()
 
     def redirect_to_login_page(self):
+        time.sleep(3)
+        driver.switch_to.window(driver.window_handles[1])
+        print("Second window title = " + driver.title)
         try:
             self.driver.find_element(*self.LOGIN_BTN)
             print('Element exist')
