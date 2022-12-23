@@ -14,8 +14,8 @@ class Logout_page(Base_page):
 
     def redirect_to_login_page(self):
         time.sleep(3)
-        driver.switch_to.window(driver.window_handles[1])
-        print("Second window title = " + driver.title)
+        self.driver.switch_to.window(self.driver.window_handles[1])
+        print("Second window title = " + self.driver.title)
         try:
             self.driver.find_element(*self.LOGIN_BTN)
             print('Element exist')
