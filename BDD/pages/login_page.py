@@ -1,5 +1,7 @@
 from selenium.webdriver.common.by import By
 from BDD.pages.base_page import Base_page
+from selenium.common import NoSuchElementException
+import time
 
 class Login_page(Base_page):
 
@@ -18,6 +20,9 @@ class Login_page(Base_page):
         self.driver.find_element(*self.LOGIN_BTN).click()
 
     def enter_to_secure(self):
+        time.sleep(3)
+        driver.switch_to.window(driver.window_handles[1])
+        print("Second window title = " + driver.title)
         try:
             self.driver.find_element(*self.LOGOUT_BTN)
             print('Element exist')
