@@ -1,4 +1,4 @@
-from browser import Browser
+from BDD.browser import Browser
 
 class BasePage(Browser):
     pass
