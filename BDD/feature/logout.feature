@@ -1,6 +1,6 @@
 Feature: Testing logout buton and if info message is displayed on '/login' page after I logout
 
-
+  @logout
   Scenario: Check that the user can access '/secure' page of herokuapp
     Given : I am on '/secure' page
     When : I clicked on Logout button
