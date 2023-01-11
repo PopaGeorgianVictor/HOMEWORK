@@ -9,6 +9,9 @@ class Logout_page(Base_page):
     LOGIN_BTN = (By.CSS_SELECTOR, '.fa.fa-2x.fa-sign-in')
     INFO_MSG = (By.ID, 'flash')
 
+    def navigate_to_page(self):
+        self.driver.get("https://the-internet.herokuapp.com/secure")
+
     def logout(self):
         self.driver.find_element(*self.LOGOUT_BTN).click()
 

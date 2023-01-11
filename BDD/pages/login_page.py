@@ -11,6 +11,8 @@ class LoginPage(BasePage):
     LOGOUT_BTN =(By.CSS_SELECTOR, '.icon-2x.icon-signout')
     INFO_MSG = (By.ID, 'flash')
 
+    def navigate_to_page(self):
+        self.driver.get("https://the-internet.herokuapp.com/login")
 
     def complete_field(self):
         self.driver.find_element(*self.USERNAME).send_keys("tomsmith")
