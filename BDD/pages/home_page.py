@@ -9,7 +9,7 @@ class HomePage(BasePage):
     LOGIN_BTN = (By.CSS_SELECTOR, '.fa.fa-2x.fa-sign-in')
 
     def navigate_to_page(self):
-        self.driver.get()
+        self.driver.get("https://the-internet.herokuapp.com/")
 
     def click_on_form(self):
         self.driver.find_element(*self.FORM_BTN).click()
