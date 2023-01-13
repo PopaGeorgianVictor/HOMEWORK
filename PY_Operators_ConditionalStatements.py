@@ -188,19 +188,19 @@ Over 6 => D
 Over 4 => E
 4 or below => F'''
 
-nota = int(input("Enter a note from the Romanian system: "))
-if nota > 9:
-    print(f"The grade {nota} is represented by A")
-elif nota >= 8:
-    print(f"The grade {nota} is represented by B")
-elif nota >= 7:
-    print(f"The grade {nota} is represented by C")
-elif nota >= 6:
-    print(f"The grade {nota} is represented by D")
-elif nota > 4:
-    print(f"The grade {nota} is represented by E")
+note = int(input("Enter a note from the Romanian system: "))
+if note > 9:
+    print(f"The grade {note} is represented by A")
+elif note >= 8:
+    print(f"The grade {note} is represented by B")
+elif note >= 7:
+    print(f"The grade {note} is represented by C")
+elif note >= 6:
+    print(f"The grade {note} is represented by D")
+elif note > 4:
+    print(f"The grade {note} is represented by E")
 else:
-    print(f"The grade {nota} is represented by F")
+    print(f"The grade {note} is represented by F")
 
 
 
