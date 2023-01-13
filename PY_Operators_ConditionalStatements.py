@@ -414,6 +414,28 @@ else:
 
 
 
+'''Create a scissors/rock/paper game'''
+
+import random
+
+computer_choice = random.choice(['scissors', 'rock' , 'paper'])
+my_choice = input('Do you want - rock ,paper, or scissors?\n')
+
+if computer_choice == my_choice:
+    print('TIE')
+elif my_choice == 'rock' and computer_choice == 'scissors':
+    print('WIN, the computer had' , computer_choice)
+elif my_choice == 'paper' and computer_choice == 'rock':
+    print('WIN, the computer had' , computer_choice)
+elif my_choice == 'scissors' and computer_choice == 'paper':
+    print('WIN, the computer had', computer_choice)
+else :
+    print('You are a failure !')
+
+
+
+
+
 """
 If a client has over 65 years, then it will be offered to him a discount of 15%.
 Otherwise if the customer does not have over 65 years, if the person travels with at
