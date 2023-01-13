@@ -362,18 +362,12 @@ print(coral_my_favorite_animal[:word_index])
 
 
 
-
-
-
 '''Read a string from the keyboard.Checks if the first and last characters are the same'''
 
 # assert method
 
 x = input('Your favorite word is: ')
 assert  x[0].capitalize() == x[-1].capitalize(), 'the first and last character are different'
-
-
-
 
 
 
@@ -387,7 +381,6 @@ assert  x[0].capitalize() == x[-1].capitalize(), 'the first and last character a
 str = '0123456789'
 print(f"Even numbers are: {str[::2]}")
 print(f"Odd numbers is: {str[1::2]}")
-
 
 
 
@@ -413,12 +406,9 @@ if guess == dice_roll:
     print(f"I played and chose {guess} and the dice was {dice_roll}, I won!")
 else:
     if guess > dice_roll:
-        print(f"You are a failure. You chose a higher number. You chose {guess} but the die was {dice_roll}")
+        print(f"You are a failure! You chose a higher number. You chose {guess} but the die was {dice_roll}")
     else:
-        print(f"You are a failure.You chose a smaller number. You chose {guess} but the die was {dice_roll}")
-
-
-
+        print(f"You are a failure! You chose a smaller number. You chose {guess} but the die was {dice_roll}")
 
 
 
@@ -453,6 +443,8 @@ else:
     tax = 0.01
 price = price - price * discount + price * tax
 print(price)
+
+
 
 
 ''' Phone call !!!
