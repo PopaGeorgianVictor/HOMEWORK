@@ -20,8 +20,6 @@ for word in my_words:
 
 
 
-
-
 '''
 Problem 2
 Take the same list in problem 1, instead of printing the words that meet the criteria, add them to a new list called 'my_new_words'
@@ -60,8 +58,6 @@ while counter <= 10:
 
 
 
-
-
 '''
 Problem 4
 Given the dictionary 'population', which is city and population pair, iterate the the dictionary and print only the cities
@@ -76,8 +72,6 @@ population = {'New York': 8.5, 'San Jose': .9, 'Phoenix': 1.6, 'Houston': 2.2, '
 for key, value in population.items():
     if value > 1.5:
         print("Cities with population more than 1.5 million are: " , key)
-
-
 
 
 
@@ -99,8 +93,6 @@ population = {'New York': 8.5, 'San Jose': .9, 'Phoenix': 1.6, 'Houston': 2.2, '
 for city in cities:
     if city in population.keys():
         print("Cities with available population information are:" , city)
-
-
 
 
 
@@ -128,10 +120,6 @@ for city in cities:
         print (f"Here is population information for the requested cities {city} ----> {city_population}")
     else:
         print ("Population information not available for :" ,  city)
-
-
-
-
 
 
 
@@ -167,7 +155,6 @@ Problem 8
 Given the list 'collection' print every single word in the list. The list contains another list that contains words. Print all
 of the words.
 '''
-
 
 
 
