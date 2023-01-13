@@ -142,7 +142,6 @@ book.object_like_rectangle()
 
 
 
-
 '''class Employee(). Attributes: surname, forename ,salary. Constructor for both attributes
      Methods:
       * employee_description() - will PRINT name, surname, salary
@@ -197,9 +196,6 @@ print(employee2.salary_increase(10/100))
 
 
 
-
-
-
 '''class Account(). Attributes: iban, account_holder ,sold. Constructor for both attributes
      Methods:
       * account_description() - will PRINT iban, account_holder ,sold
@@ -235,10 +231,6 @@ print(holder2.account_debit(10000))
 print('-' * 50)
 print(holder1.account_credit(1000000000000000000000))
 print(holder2.account_credit(100000000000000000000000000000))
-
-
-
-
 
 
 
@@ -296,10 +288,6 @@ inv2.change_quantity(0.3)
 inv2.change_price(20)
 inv2.change_product_name('MUSTARD')
 inv2.generate_invoice()
-
-
-
-
 
 
 
