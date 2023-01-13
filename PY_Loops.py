@@ -45,8 +45,6 @@ while True:
 
 
 
-
-
 '''Given the list: cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
      # use a for else inside a for
      # changes the items in the list so that they are written in uppercase,except the first and the last
@@ -59,8 +57,6 @@ for cars_upper in range(1, len(cars)-1):
    cars[cars_upper] = cars[cars_upper].upper()
 else:
    print('cars_upper:', cars)
-
-
 
 
 
@@ -86,9 +82,6 @@ for car in cars:
 
 
 
-
-
-
 ''' Given the list: cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun','Fiat', 'Trabant', 'Opel']
        # a wealthy but indecisive buyer comes along. We will show him all the cars except Trabant and Lăstun
        # if the car is Trabant or Lăstun skip it (don't use else)
@@ -103,9 +96,6 @@ for car in cars:
     if car in rich_buyer_avoid:
         continue
     print(f'You might like the {car} car')
-
-
-
 
 
 
@@ -130,9 +120,6 @@ for i in range(len(cars)):
         cars[i] = 'Tesla'
 print(f'Vintage cars are: {old_cars}')
 print(f'New models: {cars}')
-
-
-
 
 
 
@@ -173,9 +160,6 @@ for car, car_price in car_price.items():
 
 
 
-
-
-
 '''Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]. Without using count show how many times 3 occurs'''
 
 
@@ -184,8 +168,6 @@ nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
 count_number = 3
 x = [i for i in nums if i == count_number]
 print(f'The number {count_number} appears {len(x)} times')
-
-
 
 
 
@@ -205,8 +187,6 @@ print('The sum of the numbers is:', sum)
 
 
 
-
-
 '''Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3].  Without using max, display the highest number'''
 
 
@@ -221,11 +201,6 @@ print(f'The maximum number is: {max_nr}')
 
 
 
-
-
-
-
-
 ''' Given the list: nums = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3].
     # if the number is positive, replace it with its negative value
     # print new list'''
@@ -236,11 +211,6 @@ for n in nums:
     if n >= 0:
         number_conversion = -n
         print(number_conversion)
-
-
-
-
-
 
 
 
@@ -283,8 +253,6 @@ print('Negative numbers is:' , negative_number)
 
 
 
-
-
 '''Given the list: nums = [-5, 7, 2, 9, 12, 3, 1, -6, -4, 3].Without using sort, sort the list in ascending order'''
 
 
@@ -321,8 +289,6 @@ print('Sorted list is: ' , sorted_list)
 
 
 
-
-
 '''
  Number riddles:
       # secret_number = generate a random number between 1 and 30
@@ -348,7 +314,6 @@ else:
         print("Secret number it's bigger")
     else:
         print("Secret number it's smaller")
-
 
 
 
@@ -381,7 +346,6 @@ number_of_rows = int(input("Pick numbers of rows:  "))
 
 for i in range(1, number_of_rows + 1):
     print(f'{str(i) * i}')
-
 
 
 
