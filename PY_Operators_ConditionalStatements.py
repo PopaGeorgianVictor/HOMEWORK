@@ -20,10 +20,6 @@ else:
 
 
 
-
-
-
-
 '''Checks and displays whether x is a positive, negative, or neutral number'''
 
 # using if-elif-else statement
@@ -42,10 +38,6 @@ else:
 n = float(input("Enter the number:  "))
 x = ["positive" if n>0 else "negative" if n<0 else "zero" ]
 print(x)
-
-
-
-
 
 
 
@@ -75,10 +67,6 @@ if number in nr:
     print(number, ' is in the range')
 else:
     print(number, 'is not in the range')
-
-
-
-
 
 
 
@@ -115,10 +103,6 @@ else:
 
 
 
-
-
-
-
  '''x, y-int. Checks and displays if they are equal, if not displays which one is greater'''
 
 # if-else statement
@@ -146,7 +130,6 @@ elif x > y :
     print(x, 'is the bigger number')
 else:
     print(y, 'is the bigger number')
-
 
 
 
@@ -197,9 +180,6 @@ print(w)
 
 
 
-
-
-
 '''Convert and print notes from the Romanian system to >
 Over 9 => A
 Over 8 => B
@@ -225,9 +205,6 @@ else:
 
 
 
-
-
-
 '''Checks if x has at least 4 digits'''
 
 # len() function
@@ -244,10 +221,6 @@ else:
 x = int(input("The value of x is: "))
 n = [f"Number  {x} has {len(str(x))} digits" if len(str(x)) >= 4 else f"Number {x} does not have a minimum of 4 digits" ]
 print(n)
-
-
-
-
 
 
 
@@ -273,9 +246,6 @@ print(n)
 
 
 
-
-
-
 '''Checks whether x is odd or even'''
 
 # modulo operator
@@ -292,10 +262,6 @@ else:
 x = int(input("Enter the first number: "))
 n =[f'The number {x} is an even number' if x % 2 == 0 else f'The number {x} is an odd number']
 print(n)
-
-
-
-
 
 
 
@@ -341,9 +307,6 @@ else:
 
 
 
-
-
-
 '''x,y,z -represent the angles of a triangle. Checks and displays whether the triangle is valid or not'''
 
 # if-else statement
@@ -370,8 +333,6 @@ print(a)
 
 
 
-
-
 ''' Given the string: 'Coral is either the stupidest animal or the smartest rock'
       # read an int x from the keyboard
       # display the string without the last x characters
@@ -384,9 +345,6 @@ print(coral_my_favorite_animal[:- x])
 
 new_coral_my_favorite_animal = coral_my_favorite_animal[:5] + coral_my_favorite_animal[-5:]
 print(new_coral_my_favorite_animal)
-
-
-
 
 
 
