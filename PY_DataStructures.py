@@ -20,8 +20,6 @@ print(arpeggio)
 
 
 
-
-
 ''' Same musical notes list. How many times does 'do' appear?'''
 
 # counting the 'do'
@@ -29,8 +27,6 @@ print(arpeggio)
 musical_notes  = ['DO' , 'RE' , 'MI', 'FA', 'SOL', 'LA', 'SI', 'DO']
 count_DO = musical_notes.count('DO')
 print(count_DO)
-
-
 
 
 
@@ -87,9 +83,6 @@ print ("Concatenated list:\n"+ str(res))
 
 
 
-
-
-
 ''' Having 2 lists: [3, 1, 0, 2] and [6, 5, 4]
      # concatenate the lists
      # sort the list (ascending and descending)
@@ -101,9 +94,6 @@ ls = list1 + list2
 ls.sort() , print('Ascending sorted list is', ls)
 ls.sort(reverse = True) , print('Descending sorted list is', ls)
 ls.remove(0) , print('New list is', ls)
-
-
-
 
 
 
@@ -132,9 +122,6 @@ else:
 
 
 
-
-
-
 ''' Having 2 lists: [3, 1, 0, 2] and [6, 5, 4].Concatenate the lists and delete list and check if list is empty'''
 
 
@@ -147,9 +134,6 @@ ls = list1 + list2
 ls.clear()
 check = ['list is empty' if not ls else 'list is not empty']
 print(check)
-
-
-
 
 
 
@@ -175,10 +159,6 @@ print('Congrats Alex, you got ' , d['Alex'])
 d.pop('George')
 d['Isabela'] = 9
 print('New students and grade are' , d)
-
-
-
-
 
 
 
