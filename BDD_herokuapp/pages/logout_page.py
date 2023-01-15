@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 from BDD_herokuapp.pages.base_page import Base_page
-from selenium.common import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException
 import time
 
 class LogoutPage(Base_page):
