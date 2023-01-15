@@ -15,3 +15,5 @@ Feature: Testing if 'SIGN-UP' area working properly
       When sign_up:I click CONTINUE button
       When sign_up: I set my email to "test"
       Then sign_up: I receive message:Please enter a valid email address
+      When sign_up: I set my email to "test@mail.com"
+      When sign_up:I click CONTINUE button
