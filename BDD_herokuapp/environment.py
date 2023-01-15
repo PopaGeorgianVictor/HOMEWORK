@@ -1,6 +1,7 @@
 
-from BDD.pages.login_page import  LoginPage
-from BDD.pages.home_page import  HomePage
+from BDD_herokuapp.pages.login_page import  LoginPage
+from BDD_herokuapp.pages.home_page import  HomePage
+from BDD_herokuapp.pages.logout_page import LogoutPage
 from browser import Browser
 
 
