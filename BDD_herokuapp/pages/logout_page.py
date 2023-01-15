@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from BDD.pages.base_page import Base_page
+from BDD_herokuapp.pages.base_page import Base_page
 from selenium.common import NoSuchElementException
 import time
 
