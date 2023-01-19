@@ -194,6 +194,32 @@ class Login(unittest.TestCase):
         expected_url = 'https://the-internet.herokuapp.com/login'
         self.assertEqual(expected_url, actual_url, 'URL is incorrect')
 
+    # TEST 12
+
+    def hacking(self):
+        brelock = self.driver.find_element(By.XPATH, '//h4').text.split()
+        master_key = None
+        i = 0
+        while ((i < len(brelock)) and (master_key == None)):
+            self.driver.find_element(By.ID, 'username').send_keys('tomsmith')
+            self.driver.find_element(By.ID, 'password').send_keys(brelock[i])
+            self.driver.find_element(By.CSS_SELECTOR, '[type="submit"]').click()
+            self.driver.implicitly_wait(2)
+            try:
+                self.driver.find_element(By.CSS_SELECTOR, '[type="submit"]').is_displayed()
+            except NoSuchElementException:
+                master_key = brelock[i]
+                break
+            i += 1
+            self.driver.find_element(By.ID, 'username').clear()
+            self.driver.find_element(By.ID, 'password').clear()
+        if master_key != None:
+            print(f"Hacking complete: {master_key}")
+        else:
+            print('Hacking failed')
+
+
+
 
 if __name__ == '__main__' :
     unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/HOMEWORK/report'))
