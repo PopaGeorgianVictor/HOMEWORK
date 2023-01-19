@@ -30,7 +30,6 @@ which element I want to interact with.
 
 
 from selenium import webdriver
-from selenium.webdriver.firefox.service import Service
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.common.by import By
 
@@ -38,7 +37,7 @@ from selenium.webdriver.common.by import By
 url = 'https://www.techlistic.com/p/selenium-practice-form.html'
 url1 = 'https://formy-project.herokuapp.com/form'
 
-driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
 driver.maximize_window()
 driver.implicitly_wait(3)
 

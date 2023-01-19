@@ -6,14 +6,15 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from webdriver_manager.firefox import GeckoDriverManager
-from selenium.webdriver.firefox.service import Service
+
 
 
 class ContextMenu(unittest.TestCase):
 
 		BOX = (By.ID,"hot-spot")
+
 		def setUp(self) -> None:
-				self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+				self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
 				self.driver.maximize_window()
 				self.driver.get("https://the-internet.herokuapp.com/context_menu")
 				self.driver.implicitly_wait(2)
