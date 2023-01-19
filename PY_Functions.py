@@ -328,3 +328,24 @@ def multiplyNumbers(*numbers):
 
 
 print("multiply:", multiplyNumbers(4, 4, 4, 4, 4, 4, 4 ,6 ,7, 7)) # we can add any numbers we want
+
+
+'''Creation method to receive an INT arrays is a returnee lowest index
+((int) under the sum of the values of the preceding indexes is equal to the sum of the values
+subsequent indexes.
+
+Mentioned:
+
+An empty array is equal to 0.
+If there is no index that complies with cerita, return -1
+If more than one index complies with cerita, return the smaller one'''
+
+def find_indx(arr):
+    for i in range(len(arr)):
+        if sum(arr[:i+1])==sum(arr[i:]):
+            return i
+    return -1
+
+print(find_indx([1,2,3,4,3,2,1] ))
+print(find_indx([1,100,50,-51,1,1] ))
+print(find_indx([20,10,-80,10,10,15,35] ))
