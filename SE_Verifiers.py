@@ -196,6 +196,7 @@ class Login(unittest.TestCase):
 
     # TEST 12
 
+    # method 1
     def hacking(self):
         brelock = self.driver.find_element(By.XPATH, '//h4').text.split()
         master_key = None
@@ -218,6 +219,9 @@ class Login(unittest.TestCase):
         else:
             print('Hacking failed')
 
+
+
+     # method 2
 
 
 
