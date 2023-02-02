@@ -90,6 +90,7 @@ class Login(unittest.TestCase):
     LOGIN_BTN = (By.XPATH, '//*[@id="login"]/button/i')
     USERNAME = (By.XPATH, '//input[@id="username"]')
     PASSWORD = (By.XPATH, '//input[@id="password"]')
+    LOGIN_INFO = (By.XPATH, "//h4")
 
 
     def setUp(self) -> None:
@@ -227,11 +228,11 @@ class Login(unittest.TestCase):
         for word in login_message_split:
             self.driver.find_element(*self.USERNAME).send_keys("tomsmith")
             self.driver.find_element(*self.PASSWORD).send_keys(word)
-            self.driver.find_element(*self.LOGIN_BUTTON).click()
+            self.driver.find_element(*self.LOGIN_BTN).click()
             if "secure" in self.driver.current_url:
-                print(f"Am gasit parola: {word}")
+                print(f"Hacking complete:  {word}")
                 break
-        assert "secure" in self.driver.current_url, "Nu am gasit parola. Ghinion!"
+        assert "secure" in self.driver.current_url, "Hacking failed"
 
 
 if __name__ == '__main__' :
