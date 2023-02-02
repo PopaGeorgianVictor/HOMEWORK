@@ -222,7 +222,16 @@ class Login(unittest.TestCase):
 
 
      # method 2
-
+    def test_brute_force_password_hacking(self):
+        login_message_split = self.driver.find_element(*self.LOGIN_INFO).text.split()
+        for word in login_message_split:
+            self.driver.find_element(*self.USERNAME).send_keys("tomsmith")
+            self.driver.find_element(*self.PASSWORD).send_keys(word)
+            self.driver.find_element(*self.LOGIN_BUTTON).click()
+            if "secure" in self.driver.current_url:
+                print(f"Am gasit parola: {word}")
+                break
+        assert "secure" in self.driver.current_url, "Nu am gasit parola. Ghinion!"
 
 
 if __name__ == '__main__' :
